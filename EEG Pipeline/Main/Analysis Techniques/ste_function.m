@@ -1,9 +1,11 @@
  function errors = ste_function(EEG,ste_prp,workingDirectory)
     %This function is called by the main function when the STE is selected
     %and the launch analysis button is pressed
+    
+    %Set up the waitbar and its parameters
+    h = waitbar(0,'Please wait...','Name',sprintf('Symbolic Transfer Entropy Analysis'));    
 try 
     errors = 0;
-   
     %Preparing the EEG data
     samp_freq = EEG.srate;
     data = double(EEG.data);
@@ -45,8 +47,6 @@ try
     %Calculating the number of plots needed
     plot_number = full_ste + delta_ste + theta_ste + alpha_ste + beta_ste + gamma_ste;
     
-    %Set up the waitbar and its parameters
-    h = waitbar(0,'Please wait...','Name',sprintf('Symbolic Transfer Entropy Analysis'));
     totalTime = plot_number*NumWin*length(from)*length(to);
     currentTime = 1;
     
@@ -209,7 +209,7 @@ try
     close(h); %close the waitbar
     
 catch Exception
-    %close(h);
+    close(h);
     warndlg('Symbolic Transfer Entropy ran into some trouble, please click help->documentation for more information on Symbolic Transfer Entropy.','Errors')
     disp(Exception.getReport());
     errors = 1;

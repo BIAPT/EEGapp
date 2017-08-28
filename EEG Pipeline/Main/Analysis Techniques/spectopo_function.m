@@ -119,7 +119,7 @@ try
     end
     %This prepare the rows and columns needed for the subplots
     mapframes = 1:size(eegspecdB,1);
-        if lfidx == 1
+    if lfidx == 1
         rows = 1;
         cols = 1;
     elseif lfidx == 2

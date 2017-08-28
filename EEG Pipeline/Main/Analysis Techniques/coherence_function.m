@@ -1,6 +1,8 @@
 function errors = coherence_function(EEG,coherence_prp,workingDirectory)
     %This function is called by the main function when the coherence is selected
     %and the launch analysis button is pressed
+    h = waitbar(0,'Please wait...','Name',sprintf('Coherence Analysis'));
+
 try
     errors = 0;
     SF = EEG.srate;
@@ -29,7 +31,6 @@ try
     
     %Calculating the number of plots needed
     plot_number = full_coherence + delta_coherence + theta_coherence + alpha_coherence + beta_coherence + gamma_coherence;
-    h = waitbar(0,'Please wait...','Name',sprintf('Coherence Analysis'));
     totalTime = plot_number*length(from)*length(to);
     currentTime = 1;
      for sub=1:plot_number

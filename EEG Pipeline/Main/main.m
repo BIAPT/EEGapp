@@ -629,6 +629,15 @@ function phase_amplitude_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 % Hint: get(hObject,'Value') returns toggle state of phase_amplitude
+
+%Reset default properties of Matlab to counteract
+% Remove <Default>Properties from root:
+prop = get(0, 'default');
+propname = fieldnames(prop);
+for iprop = 1:length(propname)
+    set(0, propname{iprop}, 'remove');
+end
+
 textLabel = '';
 set(findobj('Tag','feedback'), 'String', textLabel); 
 
@@ -667,6 +676,14 @@ function coherence_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 % Hint: get(hObject,'Value') returns toggle state of coherence
+%Reset default properties of Matlab to counteract
+% Remove <Default>Properties from root:
+prop = get(0, 'default');
+propname = fieldnames(prop);
+for iprop = 1:length(propname)
+    set(0, propname{iprop}, 'remove');
+end
+
 textLabel = '';
 set(findobj('Tag','feedback'), 'String', textLabel); 
 
@@ -706,6 +723,15 @@ function pli_Callback(hObject, eventdata, handles)
 % hObject    handle to pli (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
+        
+%Reset default properties of Matlab to counteract
+% Remove <Default>Properties from root:
+prop = get(0, 'default');
+propname = fieldnames(prop);
+for iprop = 1:length(propname)
+    set(0, propname{iprop}, 'remove');
+end
+
 textLabel = '';
 set(findobj('Tag','feedback'), 'String', textLabel); 
 
@@ -747,6 +773,15 @@ function dpli_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 % Hint: get(hObject,'Value') returns toggle state of dpli
+
+%Reset default properties of Matlab to counteract
+% Remove <Default>Properties from root:
+prop = get(0, 'default');
+propname = fieldnames(prop);
+for iprop = 1:length(propname)
+    set(0, propname{iprop}, 'remove');
+end
+
 textLabel = '';
 set(findobj('Tag','feedback'), 'String', textLabel); 
 
@@ -786,6 +821,15 @@ function symbolic_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 % Hint: get(hObject,'Value') returns toggle state of symbolic
+
+%Reset default properties of Matlab to counteract
+% Remove <Default>Properties from root:
+prop = get(0, 'default');
+propname = fieldnames(prop);
+for iprop = 1:length(propname)
+    set(0, propname{iprop}, 'remove');
+end
+
 textLabel = '';
 set(findobj('Tag','feedback'), 'String', textLabel); 
 
@@ -825,6 +869,15 @@ function graph_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 % Hint: get(hObject,'Value') returns toggle state of graph
+
+%Reset default properties of Matlab to counteract
+% Remove <Default>Properties from root:
+prop = get(0, 'default');
+propname = fieldnames(prop);
+for iprop = 1:length(propname)
+    set(0, propname{iprop}, 'remove');
+end
+
 textLabel = '';
 set(findobj('Tag','feedback'), 'String', textLabel); 
 

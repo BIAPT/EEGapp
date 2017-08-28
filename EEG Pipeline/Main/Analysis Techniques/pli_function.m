@@ -1,6 +1,8 @@
 function errors = pli_function(EEG,pli_prp,workingDirectory,orderType,newOrder)
     %This function is called by the main function when the PLI is selected
     %and the launch analysis button is pressed
+    
+    h = waitbar(0,'Please wait...','Name',sprintf('Pli Analysis'));
 try
     errors = 0;
 
@@ -48,7 +50,6 @@ try
     PLIcorr = zeros(maximum,EEG.nbchan, EEG.nbchan); % initialize matrix
 
     %Create waitbar and initialize its parameters    
-    h = waitbar(0,'Please wait...','Name',sprintf('Pli Analysis'));
     totalTime = plot_number*maximum;
     currentTime = 1;
 
@@ -187,9 +188,32 @@ try
         set(0,'DefaultFigureVisible','on');%Here we turn plotting on
         %Print to the screen        
         if print_pli == 1
-            figure(pli_plot);
+            S.fh = figure('units','pixels',...
+              'position',[660 28 800 800],...
+              'menubar','none',...
+              'name','GUI_27',...
+              'numbertitle','off',...
+              'resize','off');
+          
+            s(2)=subplot(2,1,2);
+            topoplot([],EEG.chanlocs,'style','blank','electrodes','labelpoint','chaninfo',EEG.chaninfo);
+
+            s(1)=subplot(2,1,1);
+            colormap('jet')
+            imagesc(z_score,'hittest','off');
+            title(sprintf('PLI(%0.0fx%0.0f) of %s at Bandpass: %s',EEG.nbchan,EEG.nbchan,EEG.filename,current_pli));
+            colorbar;
+
+            S.ax = gca;
+            set(S.ax,'unit','pix','position',[230 450 320 320]);
+            S.XLM = get(S.ax,'xlim');
+            S.YLM = get(S.ax,'ylim');
+            S.AXP = get(S.ax,'pos');
+            S.DFX = diff(S.XLM);
+            S.DFY = diff(S.YLM);
+            set(s(1),'buttondownfcn',{@topofunction,S,EEG,s});
         end
-        pli_plot = 0; % Reset the pli_plot to nothing
+       
     end
     close(h); %close waitbar
     
@@ -202,4 +226,38 @@ catch Exception
 end
 
 return    
+end
+
+function [] = topofunction(varargin)
+%TOPOFUNCTION Summary of this function goes here
+%   Detailed explanation goes here
+    S = varargin{3};  % Get the structure.
+    s = varargin{5};
+    current_EEG=varargin{4};
+    
+F = get(S.fh,'currentpoint');  % The current point w.r.t the figure.
+% Figure out of the current point is over the axes or not -> logicals.
+tf1 = S.AXP(1) <= F(1) && F(1) <= S.AXP(1) + S.AXP(3);
+tf2 = S.AXP(2) <= F(2) && F(2) <= S.AXP(2) + S.AXP(4);
+
+if tf1 && tf2
+    % Calculate the current point w.r.t. the axes.
+    Cx =  ceil(S.XLM(1) + (F(1)-S.AXP(1)).*(S.DFX/S.AXP(3)));
+    Cy =  ceil(S.YLM(1) + (F(2)-S.AXP(2)).*(S.DFY/S.AXP(4)));
+    Cy = current_EEG.nbchan - Cy + 1;
+    display(['X electrode pos: ', num2str(Cx), ' and Y electrode pos: ', num2str(Cy)]);
+end
+
+for i = 1:current_EEG.nbchan
+    
+    if( i == Cx || i == Cy)
+        %display(i);
+    else
+       current_EEG.chanlocs(i).labels = ' ';
+    end
+end
+
+cla(s(2))
+subplot(s(2))
+topoplot([],current_EEG.chanlocs,'style','blank','electrodes','labelpoint','chaninfo',current_EEG.chaninfo);
 end

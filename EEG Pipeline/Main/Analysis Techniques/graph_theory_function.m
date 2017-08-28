@@ -1,6 +1,9 @@
 function errors = graph_theory_function(EEG,graph_prp,workingDirectory)
     %This function is called by the main function when Graph Theory is selected
     %and the launch analysis button is pressed
+    
+    %Create waitbar and initialize its parameters
+    h = waitbar(0,'Please wait...','Name',sprintf('Graph Theory Analysis'));
 try    
     errors = 0;
     InterfaceObj=findobj(gcf,'Enable','on');
@@ -30,8 +33,7 @@ try
     %Calculating the number of plots needed
     plot_number = fullband_graph + delta_graph + theta_graph + alpha_graph + beta_graph + gamma_graph;
 
-    %Create waitbar and initialize its parameters
-    h = waitbar(0,'Please wait...','Name',sprintf('Graph Theory Analysis'));
+
     totalTime = plot_number*(floor((length(EEG.data))/(win*EEG.srate)));
     currentTime = 1;
 

@@ -53,8 +53,8 @@ function [S,t,f,Serr]=mtspecgramcWaitBar(data,movingwin,params)
 %       f       (frequencies)
 %       Serr    (error bars) only for err(1)>=1
 
-try
 h = waitbar(0,'Please wait...','Name',sprintf('Spectrogram Analysis'));
+try
 
 if nargin < 2; error('Need data and window parameters'); end;
 if nargin < 3; params=[]; end;
