@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="3777924203" file="C:\Users\Yacine\Documents\MATLAB\EEG Pipeline\EEGapp.prj" location="C:\Users\Yacine\Documents\MATLAB\EEG Pipeline" name="EEGapp" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="3172652246" file="C:\Users\Yacine\Documents\MATLAB\EEG Pipeline\EEGapp.prj" location="C:\Users\Yacine\Documents\MATLAB\EEG Pipeline" name="EEGapp" target="target.mlapps" target-name="Package App">
     <param.appname>EEGapp</param.appname>
     <param.authnamewatermark>Yacine Mahdid and Dr. Blain Moraes</param.authnamewatermark>
     <param.email>Yacine.mahdid@mail.mcgill.ca</param.email>
@@ -23,7 +23,7 @@ Include :
 &lt;li&gt;Graph Theory&lt;/li&gt;
 &lt;/ul&gt;</param.description>
     <param.screenshot />
-    <param.version>1.1</param.version>
+    <param.version>1.2</param.version>
     <param.products.name />
     <param.products.id />
     <param.products.version />

@@ -22,7 +22,7 @@ function varargout = main(varargin)
 
 % Edit the above text to modify the response to help main
 
-% Last Modified by GUIDE v2.5 13-Apr-2017 22:36:32
+% Last Modified by GUIDE v2.5 30-Aug-2017 22:04:11
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -225,6 +225,7 @@ set(InterfaceObj,'Enable','off');
 evalin('base','clc');
 textLabel = '';
 set(findobj('Tag','feedback'), 'String', textLabel); 
+
 
 %We load spectopo , fileName and working directory
 spectopomap = get(findobj('Tag','Spectopomap'),'Value');
@@ -448,12 +449,13 @@ function fileName_CreateFcn(hObject, eventdata, handles)
 
 %Set up the filename variable and the working directory variable to default
 assignin('base', 'fileName', 'no file');
-defaultDirectory = lower(load('defaultDirectory'));
+settings = load('settings.mat');
+defaultDirectory = settings.options.savingDirectory;
 if(strcmp(defaultDirectory,'no directory') == 1)
     assignin('base', 'workingDirectory', 'No directory');
 else
-   assignin('base','workingDirectory',defaultDirectory.wDirectory);
-   set(findobj('Tag','wd'),'String',defaultDirectory.wDirectory);
+   assignin('base','workingDirectory',defaultDirectory);
+   set(findobj('Tag','wd'),'String',defaultDirectory);
 end
 % --- Executes on button press in check_data.
 function check_data_Callback(hObject, eventdata, handles)
@@ -530,6 +532,9 @@ function figure1_CloseRequestFcn(hObject, eventdata, handles)
 % handles    structure with handles and user data (see GUIDATA)
 % Hint: delete(hObject) closes the figure
 set(0,'DefaultFigureVisible','on');
+settings = evalin('base','settings');
+options = settings.options;
+save([fileparts(which(mfilename)) '/settings.mat'],'options');
 evalin('base','clear');
 delete(hObject);
 
@@ -551,6 +556,8 @@ assignin('base','orderType','default');
 assignin('base','isWarning',0); %set warning to 0
 movegui(hObject,'center');
 
+settings = load('settings.mat');
+assignin('base','settings',settings);
 %This will set the font_size for every element
 %Do this by checking if we are dealing with a mac or pc
 %If its a mac we need to increase the font-size
@@ -602,6 +609,8 @@ function set_wd_Callback(hObject, eventdata, handles)
 % handles    structure with handles and user data (see GUIDATA)
 textLabel = '';
 set(findobj('Tag','feedback'), 'String', textLabel); 
+settings = evalin('base','settings');
+currentOptions = settings.options;
 
 %Launch the get dir gui
 wDirectory = uigetdir('../','Select Working Directory');
@@ -612,8 +621,11 @@ if strcmp(input,'0') == 1
 else
     assignin('base', 'workingDirectory', wDirectory);
 end
+currentOptions.savingDirectory = wDirectory;
+settings.options = currentOptions; 
+assignin('base','settings',settings);
 set(findobj('Tag','wd'),'String',wDirectory);
-save([fileparts(which(mfilename)) '/defaultDirectory.mat'],'wDirectory');
+%save([fileparts(which(mfilename)) '/settings.mat'],'settings');
 
 
 
@@ -622,6 +634,7 @@ function figure1_DeleteFcn(hObject, eventdata, handles)
 % hObject    handle to figure1 (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
+
 
 % --- Executes on button press in phase_amplitude.
 function phase_amplitude_Callback(hObject, eventdata, handles)
@@ -923,3 +936,22 @@ function quit_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 close();
+
+
+% --------------------------------------------------------------------
+function option_Callback(hObject, eventdata, handles)
+% hObject    handle to option (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+
+% --------------------------------------------------------------------
+function set_bp_Callback(hObject, eventdata, handles)
+% hObject    handle to set_bp (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+InterfaceObj=findobj(gcf,'Enable','on');
+set(InterfaceObj,'Enable','off');
+run('bandpass_settings.m');
+uiwait(gcf);        
+set(InterfaceObj,'Enable','on');

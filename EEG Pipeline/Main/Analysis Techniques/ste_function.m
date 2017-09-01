@@ -6,6 +6,14 @@
     h = waitbar(0,'Please wait...','Name',sprintf('Symbolic Transfer Entropy Analysis'));    
 try 
     errors = 0;
+    settings = evalin('base','settings');
+    full_bp = settings.options.full;
+    alpha_bp = settings.options.alpha;
+    beta_bp = settings.options.beta;
+    delta_bp = settings.options.delta;
+    theta_bp = settings.options.theta;
+    gamma_bp = settings.options.gamma;
+        
     %Preparing the EEG data
     samp_freq = EEG.srate;
     data = double(EEG.data);
@@ -55,30 +63,30 @@ try
 
         % Here we choose the low pass and high pass values for this iteration        
         if full_ste == 1
-            lp = 1.0; 
-            hp = 50.0;
-            display('fullband(1-50Hz)');
+            lp = full_bp(1,1); 
+            hp = full_bp(1,2);
+            display(['Computing coherence at fullband(',num2str(full_bp(1,1)),'Hz-',num2str(full_bp(1,2)),'Hz)']);
         elseif delta_ste == 1
-            lp = 1.0; 
-            hp = 4.0;
-            display('delta(1-4Hz)');
+            lp = delta_bp(1,1); 
+            hp = delta_bp(1,2);
+            display(['Computing coherence at delta(',num2str(delta_bp(1,1)),'Hz-',num2str(delta_bp(1,2)),'Hz)']);
         elseif theta_ste == 1
-            lp = 4.0; 
-            hp = 8.0;    
-            display('theta(4-8Hz)');
+            lp = theta_bp(1,1); 
+            hp = theta_bp(1,2);    
+            display(['Computing coherence at theta(',num2str(theta_bp(1,1)),'Hz-',num2str(theta_bp(1,2)),'Hz)']);
         elseif alpha_ste == 1
-            lp = 8.0; 
-            hp = 13.0;    
-            display('alpha(8-13Hz)');
+            lp = alpha_bp(1,1); 
+            hp = alpha_bp(1,2);    
+            display(['Computing coherence at alpha(',num2str(alpha_bp(1,1)),'Hz-',num2str(alpha_bp(1,2)),'Hz)']);
         elseif beta_ste == 1
-            lp = 13.0; 
-            hp = 30.0;    
-            display('beta(13-30Hz)');
+            lp = beta_bp(1,1); 
+            hp = beta_bp(1,2);    
+            display(['Computing coherence at beta(',num2str(beta_bp(1,1)),'Hz-',num2str(beta_bp(1,2)),'Hz)']);
         elseif gamma_ste == 1
-            lp = 30.0; 
-            hp = 50.0;    
-            display('gamma(30-50Hz)');
-        end     
+            lp = gamma_bp(1,1); 
+            hp = gamma_bp(1,2);    
+            display(['Computing coherence at gamma(',num2str(gamma_bp(1,1)),'Hz-',num2str(gamma_bp(1,2)),'Hz)']);
+        end  
     
         %Calculate STE for every source channels to every sink channels
         %And for every sink channels to every source channels

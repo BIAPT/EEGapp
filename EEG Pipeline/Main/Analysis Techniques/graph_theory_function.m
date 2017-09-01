@@ -6,6 +6,14 @@ function errors = graph_theory_function(EEG,graph_prp,workingDirectory)
     h = waitbar(0,'Please wait...','Name',sprintf('Graph Theory Analysis'));
 try    
     errors = 0;
+    settings = evalin('base','settings');
+    full_bp = settings.options.full;
+    alpha_bp = settings.options.alpha;
+    beta_bp = settings.options.beta;
+    delta_bp = settings.options.delta;
+    theta_bp = settings.options.theta;
+    gamma_bp = settings.options.gamma;
+        
     InterfaceObj=findobj(gcf,'Enable','on');
     
     %We load all variables needed for the analysis
@@ -44,23 +52,23 @@ try
         
         %% Here we choose the low pass and high pass values for this iteration
         if fullband_graph == 1
-            lp = 1;
-            hp = 50;    
+            lp = full_bp(1,1);
+            hp = full_bp(1,2);    
         elseif delta_graph == 1
-            lp = 1;
-            hp = 4;
+            lp = delta_bp(1,1);
+            hp = delta_bp(1,2);
         elseif theta_graph == 1
-            lp = 4;
-            hp = 8;    
+            lp = theta_bp(1,1);
+            hp = theta_bp(1,2);    
         elseif alpha_graph == 1
-            lp = 8;
-            hp = 13;    
+            lp = alpha_bp(1,1);
+            hp = alpha_bp(1,2);    
         elseif beta_graph == 1
-            lp = 13;
-            hp = 30;
+            lp = beta_bp(1,1);
+            hp = beta_bp(1,2);
         elseif gamma_graph == 1 
-            lp = 30;
-            hp = 50; 
+            lp = gamma_bp(1,1);
+            hp = gamma_bp(1,2); 
         end
 
         display('Filtering the data: ');

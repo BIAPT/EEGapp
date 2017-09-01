@@ -5,7 +5,13 @@ function errors = pli_function(EEG,pli_prp,workingDirectory,orderType,newOrder)
     h = waitbar(0,'Please wait...','Name',sprintf('Pli Analysis'));
 try
     errors = 0;
-
+    settings = evalin('base','settings');
+    full_bp = settings.options.full;
+    alpha_bp = settings.options.alpha;
+    beta_bp = settings.options.beta;
+    delta_bp = settings.options.delta;
+    theta_bp = settings.options.theta;
+    gamma_bp = settings.options.gamma;
     %If there was an ordering specified by the Reorder program
     %We rearrenge the EEG data so to have them in the correct ordering
     originalData = EEG.data;
@@ -64,23 +70,23 @@ try
             %Here we check which band we have
             %and we filter accordingly
             if fullband_pli == 1
-                data_eeg = bpfilter(1.0,50.0,EEG.srate,double((EEG.data(1:EEG.nbchan,1+(i-1)*pts_length:i*pts_length))'));
-                display(['fullband(1-50Hz) pli segment ',num2str(i),' of ',num2str(maximum)]);
+                data_eeg = bpfilter(full_bp(1,1),full_bp(1,2),EEG.srate,double((EEG.data(1:EEG.nbchan,1+(i-1)*pts_length:i*pts_length))'));
+                display(['fullband(',num2str(full_bp(1,1)),'Hz-',num2str(full_bp(1,2)),'Hz) pli segment ',num2str(i),' of ',num2str(maximum)]);
             elseif delta_pli == 1
-                data_eeg = bpfilter(1.0,4.0,EEG.srate,double((EEG.data(1:EEG.nbchan,1+(i-1)*pts_length:i*pts_length))'));
-                display(['delta(1-4Hz) pli segment ',num2str(i),' of ',num2str(maximum)]);
+                data_eeg = bpfilter(delta_bp(1,1),delta_bp(1,2),EEG.srate,double((EEG.data(1:EEG.nbchan,1+(i-1)*pts_length:i*pts_length))'));
+                display(['delta(',num2str(delta_bp(1,1)),'Hz-',num2str(delta_bp(1,2)),'Hz) pli segment ',num2str(i),' of ',num2str(maximum)]);
             elseif theta_pli == 1
-                data_eeg = bpfilter(4.0,8.0,EEG.srate,double((EEG.data(1:EEG.nbchan,1+(i-1)*pts_length:i*pts_length))'));
-                display(['theta(4-8Hz) pli segment ',num2str(i),' of ',num2str(maximum)]);
+                data_eeg = bpfilter(theta_bp(1,1),theta_bp(1,2),EEG.srate,double((EEG.data(1:EEG.nbchan,1+(i-1)*pts_length:i*pts_length))'));
+                display(['theta(',num2str(theta_bp(1,1)),'Hz-',num2str(theta_bp(1,2)),'Hz) pli segment ',num2str(i),' of ',num2str(maximum)]);
             elseif alpha_pli == 1
-                data_eeg = bpfilter(8.0,13.0,EEG.srate,double((EEG.data(1:EEG.nbchan,1+(i-1)*pts_length:i*pts_length))'));
-                display(['alpha(8-13Hz) pli segment ',num2str(i),' of ',num2str(maximum)]);
+                data_eeg = bpfilter(alpha_bp(1,1),alpha_bp(1,2),EEG.srate,double((EEG.data(1:EEG.nbchan,1+(i-1)*pts_length:i*pts_length))'));
+                display(['alpha(',num2str(alpha_bp(1,1)),'Hz-',num2str(alpha_bp(1,2)),'Hz) pli segment ',num2str(i),' of ',num2str(maximum)]);
             elseif beta_pli == 1
-                data_eeg = bpfilter(13.0,30.0,EEG.srate,double((EEG.data(1:EEG.nbchan,1+(i-1)*pts_length:i*pts_length))'));
-                display(['beta(13-30Hz) pli segment ',num2str(i),' of ',num2str(maximum)]);
+                data_eeg = bpfilter(beta_bp(1,1),beta_bp(1,2),EEG.srate,double((EEG.data(1:EEG.nbchan,1+(i-1)*pts_length:i*pts_length))'));
+                display(['beta(',num2str(beta_bp(1,1)),'Hz-',num2str(beta_bp(1,2)),'Hz) pli segment ',num2str(i),' of ',num2str(maximum)]);
             elseif gamma_pli == 1
-                data_eeg = bpfilter(30.0,50.0,EEG.srate,double((EEG.data(1:EEG.nbchan,1+(i-1)*pts_length:i*pts_length))'));
-                display(['gamma(30-50Hz) pli segment ',num2str(i),' of ',num2str(maximum)]);
+                data_eeg = bpfilter(gamma_bp(1,1),gamma_bp(1,2),EEG.srate,double((EEG.data(1:EEG.nbchan,1+(i-1)*pts_length:i*pts_length))'));
+                display(['gamma(',num2str(gamma_bp(1,1)),'Hz-',num2str(gamma_bp(1,2)),'Hz) pli segment ',num2str(i),' of ',num2str(maximum)]);
             end
             
             PLI = w_PhaseLagIndex(data_eeg); %calculate weighted pli
@@ -149,9 +155,8 @@ try
         pli_plot = figure;
         colormap('jet')
         imagesc(z_score);
-        title(sprintf('PLI(%0.0fx%0.0f) of %s at Bandpass: %s',EEG.nbchan,EEG.nbchan,EEG.filename,current_pli));
+        title(sprintf('PLI of %s at Bandpass: %s',EEG.filename,current_pli));
         colorbar;
-        %caxis([0 1]); NOT REALLY NEEDED
         
         %Here we save the dPLI at the right place        
         if save_pli == 1
@@ -188,10 +193,13 @@ try
         set(0,'DefaultFigureVisible','on');%Here we turn plotting on
         %Print to the screen        
         if print_pli == 1
+            set(0,'units','pixels');
+            Pix_SS = get(0,'screensize');
+            
             S.fh = figure('units','pixels',...
-              'position',[660 28 800 800],...
+              'position',[1 1 Pix_SS(1,3)/3 Pix_SS(1,3) ],...
               'menubar','none',...
-              'name','GUI_27',...
+              'name','PLI Interactive Plot',...
               'numbertitle','off',...
               'resize','off');
           
@@ -201,11 +209,11 @@ try
             s(1)=subplot(2,1,1);
             colormap('jet')
             imagesc(z_score,'hittest','off');
-            title(sprintf('PLI(%0.0fx%0.0f) of %s at Bandpass: %s',EEG.nbchan,EEG.nbchan,EEG.filename,current_pli));
+            title(sprintf('PLI of %s at Bandpass: %s',EEG.filename,current_pli));
             colorbar;
 
             S.ax = gca;
-            set(S.ax,'unit','pix','position',[230 450 320 320]);
+            set(S.ax,'unit','pix','position',[Pix_SS(1,3)/40 Pix_SS(1,4)/1.8 Pix_SS(1,3)/4 Pix_SS(1,3)/4]);
             S.XLM = get(S.ax,'xlim');
             S.YLM = get(S.ax,'ylim');
             S.AXP = get(S.ax,'pos');

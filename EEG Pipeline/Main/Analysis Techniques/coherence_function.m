@@ -5,6 +5,14 @@ function errors = coherence_function(EEG,coherence_prp,workingDirectory)
 
 try
     errors = 0;
+    settings = evalin('base','settings');
+    full_bp = settings.options.full;
+    alpha_bp = settings.options.alpha;
+    beta_bp = settings.options.beta;
+    delta_bp = settings.options.delta;
+    theta_bp = settings.options.theta;
+    gamma_bp = settings.options.gamma;
+    
     SF = EEG.srate;
     
     % Preparing print/save for spectopo
@@ -38,29 +46,29 @@ try
         
         % Here we choose the low pass and high pass values for this iteration        
         if full_coherence == 1
-            lp = 1.0; 
-            hp = 50.0;
-            display('Computing coherence at fullband(1-50Hz)');
+            lp = full_bp(1,1); 
+            hp = full_bp(1,2);
+            display(['Computing coherence at fullband(',num2str(full_bp(1,1)),'Hz-',num2str(full_bp(1,2)),'Hz)']);
         elseif delta_coherence == 1
-            lp = 1.0; 
-            hp = 4.0;
-            display('Computing coherence at delta(1-4Hz)');
+            lp = delta_bp(1,1); 
+            hp = delta_bp(1,2);
+            display(['Computing coherence at delta(',num2str(delta_bp(1,1)),'Hz-',num2str(delta_bp(1,2)),'Hz)']);
         elseif theta_coherence == 1
-            lp = 4.0; 
-            hp = 8.0;    
-            display('Computing coherence at theta(4-8Hz)');
+            lp = theta_bp(1,1); 
+            hp = theta_bp(1,2);    
+            display(['Computing coherence at theta(',num2str(theta_bp(1,1)),'Hz-',num2str(theta_bp(1,2)),'Hz)']);
         elseif alpha_coherence == 1
-            lp = 8.0; 
-            hp = 13.0;    
-            display('Computing coherence at alpha(8-13Hz)');
+            lp = alpha_bp(1,1); 
+            hp = alpha_bp(1,2);    
+            display(['Computing coherence at alpha(',num2str(alpha_bp(1,1)),'Hz-',num2str(alpha_bp(1,2)),'Hz)']);
         elseif beta_coherence == 1
-            lp = 13.0; 
-            hp = 30.0;    
-            display('Computing coherence at beta(13-30Hz)');
+            lp = beta_bp(1,1); 
+            hp = beta_bp(1,2);    
+            display(['Computing coherence at beta(',num2str(beta_bp(1,1)),'Hz-',num2str(beta_bp(1,2)),'Hz)']);
         elseif gamma_coherence == 1
-            lp = 30.0; 
-            hp = 50.0;    
-            display('Computing coherence at gamma(30-50Hz)');
+            lp = gamma_bp(1,1); 
+            hp = gamma_bp(1,2);    
+            display(['Computing coherence at gamma(',num2str(gamma_bp(1,1)),'Hz-',num2str(gamma_bp(1,2)),'Hz)']);
         end
         
         data = bpfilter(lp, hp, SF, double(EEG.data'));
