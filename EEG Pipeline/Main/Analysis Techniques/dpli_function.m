@@ -233,6 +233,7 @@ try
           
             s(2)=subplot(2,1,2);
             topoplot([],EEG.chanlocs,'style','blank','electrodes','labelpoint','chaninfo',EEG.chaninfo);
+            title('Left click on the dPLI matrix to see the channels in the topographic plot');
 
             s(1)=subplot(2,1,1);
             colormap('jet')
@@ -241,7 +242,7 @@ try
             colorbar;
 
             S.ax = gca;
-            set(S.ax,'unit','pix','position',[Pix_SS(1,3)/40 Pix_SS(1,4)/1.8 Pix_SS(1,3)/4 Pix_SS(1,3)/4]);
+            set(S.ax,'unit','pix','position',[Pix_SS(1,3)/15 Pix_SS(1,4)/1.8 Pix_SS(1,3)/5 Pix_SS(1,3)/5]);
             S.XLM = get(S.ax,'xlim');
             S.YLM = get(S.ax,'ylim');
             S.AXP = get(S.ax,'pos');
@@ -281,7 +282,13 @@ if tf1 && tf2
     Cx =  ceil(S.XLM(1) + (F(1)-S.AXP(1)).*(S.DFX/S.AXP(3)));
     Cy =  ceil(S.YLM(1) + (F(2)-S.AXP(2)).*(S.DFY/S.AXP(4)));
     Cy = current_EEG.nbchan - Cy + 1;
-    display(['X electrode pos: ', num2str(Cx), ' and Y electrode pos: ', num2str(Cy)]);
+end
+
+orderType = evalin('base','orderType');
+if(strcmp(orderType,'custom') == 1)
+    order = evalin('base','newOrder');
+    Cx = order(Cx,1);
+    Cy = order(Cy,1);
 end
 
 for i = 1:current_EEG.nbchan
@@ -296,4 +303,5 @@ end
 cla(s(2))
 subplot(s(2))
 topoplot([],current_EEG.chanlocs,'style','blank','electrodes','labelpoint','chaninfo',current_EEG.chaninfo);
+title('Left click on the dPLI matrix to see the channels in the topographic plot');
 end

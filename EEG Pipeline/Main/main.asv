@@ -516,7 +516,7 @@ if get(findobj('Tag','Spectopomap'), 'Value') == 1
         end
         evalin('base','clear premature_close_spectopo');%remove premature_close variable
     else
-        textLabel = sprintf('Please make sure you loaded at least one EEG data set and selected a saving directory.');
+        textLabel = sprintf('Please make sure you loaded at least one EEG data set  and selected a saving directory.');
         set(findobj('Tag','Spectopomap'), 'Value',0);
         set(findobj('Tag','feedback'), 'String',textLabel);
     end

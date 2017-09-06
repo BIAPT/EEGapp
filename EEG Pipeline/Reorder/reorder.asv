@@ -226,7 +226,7 @@ set(findobj('Tag','number'),'FontSize',font_size)
 set(findobj('Tag','selection'),'FontSize',font_size)
 set(findobj('Tag','load_button'),'FontSize',font_size)
 
-set(findobj('Tag','feedback'), 'String', 'Please select order type. When ready click rearrenge, the order will be saved in your working directory.');
+set(findobj('Tag','feedback'), 'String', 'Please select your order input type. When ready click rearrenge, the custom order will be saved in your working directory.');
 
 % --------------------------------------------------------------------
 function help_Callback(hObject, eventdata, handles)
@@ -330,6 +330,6 @@ function figure1_CloseRequestFcn(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 set(findobj('Tag','feedback'), 'String', ''); 
-evalin('base','clear order orderData');
+evalin('base','clear order
 % Hint: delete(hObject) closes the figure
 delete(hObject);
