@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="3172652246" file="C:\Users\Yacine\Documents\MATLAB\EEG Pipeline\EEGapp.prj" location="C:\Users\Yacine\Documents\MATLAB\EEG Pipeline" name="EEGapp" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="3117611349" file="C:\Users\Yacine\Documents\MATLAB\EEG Pipeline\EEGapp.prj" location="C:\Users\Yacine\Documents\MATLAB\EEG Pipeline" name="EEGapp" target="target.mlapps" target-name="Package App">
     <param.appname>EEGapp</param.appname>
     <param.authnamewatermark>Yacine Mahdid and Dr. Blain Moraes</param.authnamewatermark>
     <param.email>Yacine.mahdid@mail.mcgill.ca</param.email>
@@ -10,7 +10,8 @@
       <file>${PROJECT_ROOT}\EEGapp_resources\icon_24.png</file>
       <file>${PROJECT_ROOT}\EEGapp_resources\icon_16.png</file>
     </param.icons>
-    <param.summary>Official Release</param.summary>
+    <param.summary>Official Release:
+Now optimized for multicore computers</param.summary>
     <param.description>Pipeline for analysis of continuous EEG data.
 Include : 
 &lt;ul&gt;
@@ -23,7 +24,7 @@ Include :
 &lt;li&gt;Graph Theory&lt;/li&gt;
 &lt;/ul&gt;</param.description>
     <param.screenshot />
-    <param.version>1.2</param.version>
+    <param.version>1.3</param.version>
     <param.products.name />
     <param.products.id />
     <param.products.version />
@@ -45,107 +46,154 @@ Include :
       <file>${PROJECT_ROOT}\Main\main.m</file>
     </fileset.main>
     <fileset.depfun>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet.fig</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_EdgCostumColor.fig</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_EdgCostumColor.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_LoadFiles.fig</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_LoadFiles.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_MapCfg.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_MergeMesh.fig</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_MergeMesh.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_ModuleColor.fig</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_ModuleColor.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_Option.fig</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_Option.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_Output_txt.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\cat.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\Contents.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\ctranspose.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\disp.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\display.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\double.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\end.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\fieldnames.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\file_array.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\horzcat.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\isnan.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\length.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\loadobj.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\ndims.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\numel.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\numeric.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\permute.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\private\datatypes.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\private\dim.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\private\dtype.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\private\file2mat.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\private\file2mat.mexw64</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\private\fname.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\private\mat2file.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\private\mat2file.mexw64</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\private\mystruct.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\private\offset.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\private\permission.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\private\resize_scales.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\private\scl_inter.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\private\scl_slope.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\reshape.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\size.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\subsasgn.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\subsref.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\transpose.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\vertcat.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\Contents.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\create.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\disp.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\display.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\fieldnames.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\nifti.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\decode_qform0.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\empty_hdr.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\encode_qform0.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\findindict.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\getdict.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\M2Q.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\mayo2nifti1.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\mayostruc.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\nifti_stats.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\niftistruc.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\Q2M.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\read_extras.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\read_hdr.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\read_hdr_raw.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\write_extras.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\write_hdr_raw.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\structn.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\subsasgn.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\subsref.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\BrainNet_spm_check_orientations.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\BrainNet_spm_existfile.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\BrainNet_spm_existfile.mexw64</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\BrainNet_spm_fileparts.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\BrainNet_spm_matrix.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\BrainNet_spm_read_vols.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\BrainNet_spm_slice_vol.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\BrainNet_spm_slice_vol.mexw64</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\BrainNet_spm_str_manip.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\BrainNet_spm_type.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\BrainNet_spm_vol.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\BrainNet_spm_vol_nifti.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\graph_network_properties.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\continuous\mtfftc.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\continuous\mtspectrumc.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\helper\change_row_to_column.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\helper\dpsschk.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\helper\getfgrid.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\helper\getparams.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\helper\specerr.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\plots\plot_matrix.m</file>
       <file>${PROJECT_ROOT}\Coherence\coherence.fig</file>
       <file>${PROJECT_ROOT}\Coherence\coherence.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\add_order.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\average_network_properties.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\averagetopo.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\adjacency_plot_und.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\agreement.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\agreement_weighted.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\align_matrices.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\assortativity_bin.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\assortativity_wei.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\backbone_wu.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\betweenness_bin.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\betweenness_wei.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\breadth.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\breadthdist.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\charpath.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\clique_communities.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\clustering_coef_bd.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\clustering_coef_bu.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\clustering_coef_wd.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\clustering_coef_wu.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\clustering_coef_wu_sign.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\community_louvain.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\consensus_und.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\core_periphery_dir.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\cycprob.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\data_and_demos\cat.mat</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\data_and_demos\Coactivation_matrix.mat</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\data_and_demos\demo_efficiency_measures.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\data_and_demos\demo_efficiency_measures_data.mat</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\data_and_demos\demo_generative_models_data.mat</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\data_and_demos\demo_generative_models_geometric.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\data_and_demos\demo_generative_models_neighbors.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\data_and_demos\fve30.mat</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\data_and_demos\fve32.mat</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\data_and_demos\GroupAverage_rsfMRI_matrix.mat</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\data_and_demos\macaque47.mat</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\data_and_demos\macaque71.mat</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\data_and_demos\motif34lib.mat</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\degrees_dir.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\degrees_und.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\density_dir.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\density_und.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\diffusion_efficiency.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\distance_bin.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\distance_wei.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\distance_wei_floyd.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\diversity_coef_sign.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\edge_betweenness_bin.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\edge_betweenness_wei.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\edge_nei_overlap_bd.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\edge_nei_overlap_bu.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\efficiency_bin.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\efficiency_wei.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\eigenvector_centrality_und.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\erange.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\evaluate_generative_model.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\find_motif34.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\findpaths.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\findwalks.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\flow_coef_bd.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\gateway_coef_sign.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\generate_fc.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\generative_model.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\get_components.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\grid_communities.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\gtom.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\jdegree.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\kcore_bd.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\kcore_bu.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\kcoreness_centrality_bd.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\kcoreness_centrality_bu.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\latmio_dir.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\latmio_dir_connected.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\latmio_und.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\latmio_und_connected.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\link_communities.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\local_assortativity_wu_sign.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\make_motif34lib.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\makeevenCIJ.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\makefractalCIJ.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\makelatticeCIJ.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\makerandCIJ_dir.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\makerandCIJ_und.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\makerandCIJdegreesfixed.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\makeringlatticeCIJ.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\maketoeplitzCIJ.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\matching_ind.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\matching_ind_und.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\mean_first_passage_time.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\mleme_constraint_model.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\modularity_dir.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\modularity_und.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\module_degree_zscore.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\motif3funct_bin.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\motif3funct_wei.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\motif3struct_bin.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\motif3struct_wei.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\motif4funct_bin.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\motif4funct_wei.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\motif4struct_bin.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\motif4struct_wei.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\null_model_dir_sign.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\null_model_und_sign.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\pagerank_centrality.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\participation_coef.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\participation_coef_sign.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\partition_distance.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\path_transitivity.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\predict_fc.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\randmio_dir.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\randmio_dir_connected.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\randmio_dir_signed.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\randmio_und.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\randmio_und_connected.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\randmio_und_signed.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\randomize_graph_partial_und.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\randomizer_bin_und.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\reachdist.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\rentian_scaling_2d.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\rentian_scaling_3d.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\reorder_matrix.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\reorder_mod.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\reorderMAT.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\resource_efficiency_bin.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\retrieve_shortest_path.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\rich_club_bd.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\rich_club_bu.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\rich_club_wd.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\rich_club_wu.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\rout_efficiency.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\score_wu.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\search_information.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\strengths_dir.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\strengths_und.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\strengths_und_sign.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\subgraph_centrality.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\threshold_absolute.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\threshold_proportional.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\transitivity_bd.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\transitivity_bu.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\transitivity_wd.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\transitivity_wu.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\weight_conversion.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\2017_01_15_BCT\writetoPAJ.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\release_notes.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\BCT\release_notes.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\bpfilter.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet.fig</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet.m</file>
@@ -168,7 +216,26 @@ Include :
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_Option.fig</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_Option.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_Output_txt.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\cat.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\Contents.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\ctranspose.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\disp.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\display.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\double.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\end.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\fieldnames.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\file_array.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\horzcat.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\isnan.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\length.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\loadobj.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\ndims.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\numel.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\numeric.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\permute.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\datatypes.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\dim.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\dtype.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\file2mat.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\file2mat.mexa64</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\file2mat.mexglx</file>
@@ -176,6 +243,7 @@ Include :
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\file2mat.mexmaci64</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\file2mat.mexw32</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\file2mat.mexw64</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\fname.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\mat2file.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\mat2file.mexa64</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\mat2file.mexglx</file>
@@ -183,10 +251,46 @@ Include :
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\mat2file.mexmaci64</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\mat2file.mexw32</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\mat2file.mexw64</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\mystruct.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\offset.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\permission.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\resize_scales.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\scl_inter.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\scl_slope.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\reshape.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\size.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\subsasgn.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\subsref.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\transpose.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\vertcat.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\Contents.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\create.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\disp.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\display.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\fieldnames.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\nifti.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\private\decode_qform0.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\private\empty_hdr.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\private\encode_qform0.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\private\findindict.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\private\getdict.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\private\M2Q.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\private\mayo2nifti1.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\private\mayostruc.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\private\nifti1.h</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\private\nifti_stats.c</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\private\nifti_stats.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\private\nifti_stats_mex.c</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\private\niftistruc.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\private\Q2M.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\private\read_extras.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\private\read_hdr.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\private\read_hdr_raw.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\private\write_extras.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\private\write_hdr_raw.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\structn.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\subsasgn.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\subsref.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\BrainNet_spm_check_orientations.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\BrainNet_spm_existfile.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\BrainNet_spm_existfile.mexa64</file>
@@ -298,6 +402,7 @@ Include :
       <file>${PROJECT_ROOT}\custom_stuff\Net.jpg</file>
       <file>${PROJECT_ROOT}\custom_stuff\null_model_und_sign.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\numSubplots.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\order.mat</file>
       <file>${PROJECT_ROOT}\custom_stuff\phaseamplitudeovertime.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\PhaseLagIndex.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\PhaseLagIndex_surrogate.m</file>
@@ -321,6 +426,7 @@ Include :
       <file>${PROJECT_ROOT}\custom_stuff\test_PLI_stats.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\test_WinOnTop.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\threshold_absolute.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\tweaked_topoplot.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\unconscious_network_properties.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\w_PhaseLagIndex.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\w_PhaseLagIndex_ft.m</file>
@@ -358,12 +464,16 @@ Include :
       <file>${PROJECT_ROOT}\Main\Cmd Analysis Techniques\pli_eegapp.m</file>
       <file>${PROJECT_ROOT}\Main\Cmd Analysis Techniques\spectopo_eegapp.m</file>
       <file>${PROJECT_ROOT}\Main\Cmd Analysis Techniques\ste_eegapp.m</file>
-      <file>${PROJECT_ROOT}\Main\defaultDirectory.mat</file>
       <file>${PROJECT_ROOT}\Main\main.fig</file>
+      <file>${PROJECT_ROOT}\Main\settings.mat</file>
+      <file>${PROJECT_ROOT}\Options\bandpass_settings.fig</file>
+      <file>${PROJECT_ROOT}\Options\bandpass_settings.m</file>
       <file>${PROJECT_ROOT}\Phase Amplitude Coupling\Phase_Amplitude_Coupling.fig</file>
       <file>${PROJECT_ROOT}\Phase Amplitude Coupling\Phase_Amplitude_Coupling.m</file>
+      <file>${PROJECT_ROOT}\Phase Lag Index\order.mat</file>
       <file>${PROJECT_ROOT}\Phase Lag Index\Phase_lag_index.fig</file>
       <file>${PROJECT_ROOT}\Phase Lag Index\Phase_lag_index.m</file>
+      <file>${PROJECT_ROOT}\Reorder\order.mat</file>
       <file>${PROJECT_ROOT}\Reorder\reorder.fig</file>
       <file>${PROJECT_ROOT}\Reorder\reorder.m</file>
       <file>${PROJECT_ROOT}\Spectrogram and Topographic Map\Spectrogram_Topog.fig</file>
@@ -493,16 +603,6 @@ Include :
       <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\plugins\firfilt1.6.1\minphaserceps.m</file>
       <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\plugins\firfilt1.6.1\pop_eegfiltnew.m</file>
       <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\plugins\firfilt1.6.1\windows.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\charpath.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\clustering_coef_bu.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\community_louvain.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\degrees_und.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\distance_bin.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\efficiency_bin.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\null_model_und_sign.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\randmio_und.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\randmio_und_signed.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\strengths_und.m</file>
     </fileset.depfun>
     <fileset.resources>
       <file>${PROJECT_ROOT}\Coherence</file>
@@ -514,6 +614,7 @@ Include :
       <file>${PROJECT_ROOT}\Graph Theory</file>
       <file>${PROJECT_ROOT}\Load</file>
       <file>${PROJECT_ROOT}\Main</file>
+      <file>${PROJECT_ROOT}\Options</file>
       <file>${PROJECT_ROOT}\Phase Amplitude Coupling</file>
       <file>${PROJECT_ROOT}\Phase Lag Index</file>
       <file>${PROJECT_ROOT}\Reorder</file>

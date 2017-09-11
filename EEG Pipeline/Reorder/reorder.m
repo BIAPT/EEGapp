@@ -308,6 +308,10 @@ function load_button_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 [OrderFileName,OrderPathName] = uigetfile({'*.mat','All Files'},'Select Order File');
+input = num2str(OrderFileName);
+if strcmp(input,'0') == 1
+    %Do nothing
+else
 orderStruct = load([OrderPathName OrderFileName]);
 isName = orderStruct.orderData.isName;
 ordering = orderStruct.orderData.ordering;
@@ -321,6 +325,7 @@ else
     set(findobj('Tag','number'), 'Value', 1);
     set(findobj('Tag','selection'), 'Value', 0);
     set(findobj('Tag','name'), 'Value', 0);
+end
 end
 
 
