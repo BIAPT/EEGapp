@@ -1,3 +1,4 @@
+<img src="https://github.com/BIAPT/EEGapp/blob/master/EEG%20Pipeline/Documentation/LOGO_BG.jpg?"/>
 <h1>What is EEGapp?</h1>
 
 <h1>Features</h1>
