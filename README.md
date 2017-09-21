@@ -32,7 +32,7 @@
 <p>First you should import and clean your EEG data with the help of the freely available <b>eeglab</b> software. When this is done, save the EEG struct files that appear on your workspace while your dataset of choice is loaded. This struct file contain your EEG data and all the necessary information for EEGapp to run the analysis techniques.</p>
 <h4>Analysis:</h4>
 <p> Open EEGapp, load your EEG struct file(s) and choose a saving directory. Then select the analysis techniques you wish to perform and enter the values for all the variables that are required. When ready, click the "launch analysis" button and EEGapp will do the rest!</p>
-<h1>Requierement</h1>
+<h1>Requirement</h1>
 <ul>
 <li>A working version of Matlab with the signal processing toolbox activated.</li>
 <li>An up to date version of eeglab for the pre-processing steps.</li>
