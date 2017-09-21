@@ -18,7 +18,7 @@
 <li>Visual tool for channels reordering</li>
 <li>Interactive plot for PLI and dPLI</li>
 </ul>
-<h1>Percs</h1>
+<h1>Advantages</h1>
 <ul>
 <li>Easy to use interface</li>
 <li>No coding required</li>
@@ -27,7 +27,7 @@
 </ul>
 <h1>How to use</h1>
 <h4>Installation:</h4>
-<p> This pipeline is bundled as a MATLAB plugging. You only need to download the EEGapp installation package provided in this directory, double click on it and follow the instruction on the screen.</p>
+<p> This pipeline is bundled as a MATLAB plug in. You only need to download the EEGapp installation package provided in this directory, double click on it and follow the instruction on the screen.</p>
 <h4>Pre-processing:</h4>
 <p>First you should import and clean your EEG data with the help of the freely available <b>eeglab</b> software. When this is done, save the EEG struct files that appear on your workspace while your dataset of choice is loaded. This struct file contain your EEG data and all the necessary information for EEGapp to run the analysis techniques.</p>
 <h4>Analysis:</h4>
