@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="3117611349" file="C:\Users\Yacine\Documents\MATLAB\EEG Pipeline\EEGapp.prj" location="C:\Users\Yacine\Documents\MATLAB\EEG Pipeline" name="EEGapp" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="1172938276" file="C:\Users\Yacine\Documents\MATLAB\EEG Pipeline\EEGapp.prj" location="C:\Users\Yacine\Documents\MATLAB\EEG Pipeline" name="EEGapp" target="target.mlapps" target-name="Package App">
     <param.appname>EEGapp</param.appname>
     <param.authnamewatermark>Yacine Mahdid and Dr. Blain Moraes</param.authnamewatermark>
     <param.email>Yacine.mahdid@mail.mcgill.ca</param.email>
@@ -24,7 +24,7 @@ Include :
 &lt;li&gt;Graph Theory&lt;/li&gt;
 &lt;/ul&gt;</param.description>
     <param.screenshot />
-    <param.version>1.3</param.version>
+    <param.version>1.3.1</param.version>
     <param.products.name />
     <param.products.id />
     <param.products.version />
@@ -46,6 +46,95 @@ Include :
       <file>${PROJECT_ROOT}\Main\main.m</file>
     </fileset.main>
     <fileset.depfun>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet.fig</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_EdgCostumColor.fig</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_EdgCostumColor.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_LoadFiles.fig</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_LoadFiles.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_MapCfg.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_MergeMesh.fig</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_MergeMesh.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_ModuleColor.fig</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_ModuleColor.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_Option.fig</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_Option.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_Output_txt.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\cat.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\Contents.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\ctranspose.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\disp.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\display.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\double.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\end.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\fieldnames.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\file_array.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\horzcat.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\isnan.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\length.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\loadobj.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\ndims.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\numel.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\numeric.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\permute.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\private\datatypes.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\private\dim.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\private\dtype.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\private\file2mat.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\private\file2mat.mexw64</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\private\fname.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\private\mat2file.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\private\mat2file.mexw64</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\private\mystruct.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\private\offset.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\private\permission.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\private\resize_scales.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\private\scl_inter.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\private\scl_slope.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\reshape.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\size.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\subsasgn.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\subsref.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\transpose.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\vertcat.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\Contents.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\create.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\disp.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\display.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\fieldnames.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\nifti.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\decode_qform0.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\empty_hdr.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\encode_qform0.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\findindict.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\getdict.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\M2Q.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\mayo2nifti1.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\mayostruc.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\nifti_stats.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\niftistruc.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\Q2M.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\read_extras.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\read_hdr.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\read_hdr_raw.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\write_extras.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\write_hdr_raw.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\structn.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\subsasgn.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\subsref.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\BrainNet_spm_check_orientations.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\BrainNet_spm_existfile.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\BrainNet_spm_existfile.mexw64</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\BrainNet_spm_fileparts.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\BrainNet_spm_matrix.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\BrainNet_spm_read_vols.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\BrainNet_spm_slice_vol.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\BrainNet_spm_slice_vol.mexw64</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\BrainNet_spm_str_manip.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\BrainNet_spm_type.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\BrainNet_spm_vol.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\BrainNet_spm_vol_nifti.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Blan-Moraes Functions\graph_network_properties.m</file>
       <file>${PROJECT_ROOT}\Coherence\coherence.fig</file>
       <file>${PROJECT_ROOT}\Coherence\coherence.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\add_order.m</file>
@@ -216,26 +305,7 @@ Include :
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_Option.fig</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_Option.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_Output_txt.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\cat.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\Contents.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\ctranspose.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\disp.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\display.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\double.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\end.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\fieldnames.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\file_array.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\horzcat.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\isnan.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\length.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\loadobj.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\ndims.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\numel.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\numeric.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\permute.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\datatypes.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\dim.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\dtype.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\file2mat.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\file2mat.mexa64</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\file2mat.mexglx</file>
@@ -243,7 +313,6 @@ Include :
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\file2mat.mexmaci64</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\file2mat.mexw32</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\file2mat.mexw64</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\fname.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\mat2file.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\mat2file.mexa64</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\mat2file.mexglx</file>
@@ -251,46 +320,10 @@ Include :
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\mat2file.mexmaci64</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\mat2file.mexw32</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\mat2file.mexw64</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\mystruct.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\offset.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\permission.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\resize_scales.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\scl_inter.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\scl_slope.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\reshape.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\size.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\subsasgn.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\subsref.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\transpose.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\vertcat.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\Contents.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\create.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\disp.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\display.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\fieldnames.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\nifti.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\private\decode_qform0.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\private\empty_hdr.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\private\encode_qform0.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\private\findindict.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\private\getdict.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\private\M2Q.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\private\mayo2nifti1.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\private\mayostruc.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\private\nifti1.h</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\private\nifti_stats.c</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\private\nifti_stats.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\private\nifti_stats_mex.c</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\private\niftistruc.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\private\Q2M.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\private\read_extras.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\private\read_hdr.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\private\read_hdr_raw.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\private\write_extras.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\private\write_hdr_raw.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\structn.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\subsasgn.m</file>
-      <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\subsref.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\BrainNet_spm_check_orientations.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\BrainNet_spm_existfile.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\BrainNet_spm8_files\BrainNet_spm_existfile.mexa64</file>
@@ -354,6 +387,709 @@ Include :
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\Data\SurfTemplate\BrainMesh_ICBM152Right.nv</file>
       <file>${PROJECT_ROOT}\custom_stuff\Brain_net\Data\SurfTemplate\BrainMesh_ICBM152Right_smoothed.nv</file>
       <file>${PROJECT_ROOT}\custom_stuff\charpath.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\dataio\HowToReadNexFilesInMatlab\nex_cont.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\dataio\HowToReadNexFilesInMatlab\nex_info.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\dataio\HowToReadNexFilesInMatlab\nex_int.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\dataio\HowToReadNexFilesInMatlab\nex_marker.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\dataio\HowToReadNexFilesInMatlab\nex_ts.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\dataio\HowToReadNexFilesInMatlab\nex_wf.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\dataio\HowToReadNexFilesInMatlab\ReadmeNex.txt</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\dataio\HowToReadNexFilesInMatlab\test.nex</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\dataio\HowToReadNexFilesInMatlab\test_nex.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\dataio\readdat.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\dataio\ReadingPLXandDDTfilesinMatlab\ddt.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\dataio\ReadingPLXandDDTfilesinMatlab\plx_ad.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\dataio\ReadingPLXandDDTfilesinMatlab\plx_event_ts.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\dataio\ReadingPLXandDDTfilesinMatlab\plx_info.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\dataio\ReadingPLXandDDTfilesinMatlab\plx_ts.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\dataio\ReadingPLXandDDTfilesinMatlab\plx_waves.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\dataio\ReadingPLXandDDTfilesinMatlab\ReadmePLXandDDT.txt</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\alpha.png</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\c++.png</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\c.png</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\dataio\HowToReadNexFilesInMatlab\menu.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\dataio\HowToReadNexFilesInMatlab\nex_cont.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\dataio\HowToReadNexFilesInMatlab\nex_info.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\dataio\HowToReadNexFilesInMatlab\nex_int.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\dataio\HowToReadNexFilesInMatlab\nex_marker.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\dataio\HowToReadNexFilesInMatlab\nex_ts.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\dataio\HowToReadNexFilesInMatlab\nex_wf.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\dataio\HowToReadNexFilesInMatlab\test_nex.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\dataio\menu.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\dataio\readdat.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\dataio\ReadingPLXandDDTfilesinMatlab\ddt.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\dataio\ReadingPLXandDDTfilesinMatlab\menu.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\dataio\ReadingPLXandDDTfilesinMatlab\plx_ad.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\dataio\ReadingPLXandDDTfilesinMatlab\plx_event_ts.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\dataio\ReadingPLXandDDTfilesinMatlab\plx_info.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\dataio\ReadingPLXandDDTfilesinMatlab\plx_ts.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\dataio\ReadingPLXandDDTfilesinMatlab\plx_waves.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\FAnalyze\functions\CalcCurvature.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\FAnalyze\functions\CalcReorientAngle.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\FAnalyze\functions\FAnalyze.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\FAnalyze\functions\FindDuration.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\FAnalyze\functions\JointDist.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\FAnalyze\functions\menu.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\FAnalyze\functions\ProbDist1D.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\FAnalyze\functions\ProbDist2D.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\FAnalyze\functions\runline.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\FTrack\functions\CleanData.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\FTrack\functions\FindFly.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\FTrack\functions\fit_ellipse.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\FTrack\functions\FlyOrient.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\FTrack\functions\FlyTracker.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\FTrack\functions\FTrack.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\FTrack\functions\menu.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\FTrack\functions\pca1.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2006a\@videoReader\close.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2006a\@videoReader\getframe.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2006a\@videoReader\getinfo.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2006a\@videoReader\getnext.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2006a\@videoReader\menu.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2006a\@videoReader\next.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2006a\@videoReader\seek.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2006a\@videoReader\step.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2006a\@videoReader\videoReader.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2006a\@videoWriter\addframe.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2006a\@videoWriter\close.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2006a\@videoWriter\getinfo.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2006a\@videoWriter\menu.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2006a\@videoWriter\videoWriter.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2006a\defaultVideoIOPlugin.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2006a\menu.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2006a\videoread.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2006b\@videoReader\close.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2006b\@videoReader\getframe.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2006b\@videoReader\getinfo.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2006b\@videoReader\getnext.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2006b\@videoReader\menu.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2006b\@videoReader\next.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2006b\@videoReader\seek.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2006b\@videoReader\step.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2006b\@videoReader\videoReader.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2006b\@videoWriter\addframe.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2006b\@videoWriter\close.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2006b\@videoWriter\getinfo.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2006b\@videoWriter\menu.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2006b\@videoWriter\videoWriter.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2006b\defaultVideoIOPlugin.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2006b\menu.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2006b\videoread.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2007a\@videoReader\close.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2007a\@videoReader\getframe.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2007a\@videoReader\getinfo.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2007a\@videoReader\getnext.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2007a\@videoReader\menu.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2007a\@videoReader\next.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2007a\@videoReader\seek.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2007a\@videoReader\step.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2007a\@videoReader\videoReader.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2007a\@videoWriter\addframe.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2007a\@videoWriter\close.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2007a\@videoWriter\getinfo.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2007a\@videoWriter\menu.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2007a\@videoWriter\videoWriter.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2007a\defaultVideoIOPlugin.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2007a\menu.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\fly_track\videoIO\videoIO_2007a\videoread.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\Instructions.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\License.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\fig10_1.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\fig11_1.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\fig11_4.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\fig11_5.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\fig13_1.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\fig1_1.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\fig1_2.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\fig2_2.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\fig2_3.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\fig2_4.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\fig2_5.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\fig2_6.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\fig2_7.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\fig3_1.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\fig4_1.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\fig4_2.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\fig4_3.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\fig4_4.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\fig5_1.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\fig5_2.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\fig5_3.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\fig5_4.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\fig5_5.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\fig5_6.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\fig6_1.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\fig6_2.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\fig6_3.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\fig6_4.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\fig6_5.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\fig6_6.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\fig6_7.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\fig7_1.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\fig7_2.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\fig7_3.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\fig7_4.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\fig7_5.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\fig7_6.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\fig8_1.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\fig8_2.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\fig8_3.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\fig9_1.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\fig9_2.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\menu.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Book\runbook.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\m\aic.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\m\aicplot.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\m\backtr.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\m\fitted.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\m\gcv.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\m\gcvplot.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\m\hatmatrix.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\m\invlink.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\m\kappa0.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\m\lcv.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\m\lcvplot.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\m\lf_censor.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\m\lfband.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\m\lfgui.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\m\lfknots.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\m\lfmarg.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\m\lfplot.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\m\lfsmooth.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\m\locfit.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\m\locfit_all.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\m\menu.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\m\plotbyfactor.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\m\predict.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\m\residuals.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\m\rsum.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\m\scb.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\m\smooth_lf.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\m\spence15.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\m\spence21.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\m\vecr.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Neuro\lfex1.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Neuro\lfex2.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\locfit\Neuro\menu.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\menu.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\old\CrossSpecMat.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\old\menu.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\old\tutorial\menu.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\old\tutorial\significant-spike-field-coherenceMBL2005.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\old\tutorial\spectraMBL2005.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\old\tutorial\spike-field-coherenceMBL2005.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\chronux.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\continuous\coherencyc.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\continuous\coherencyc_unequal_length_trials.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\continuous\coherencysegc.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\continuous\cohgramc.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\continuous\cohmatrixc.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\continuous\createdatamatc.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\continuous\CrossSpecMatc.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\continuous\evoked.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\continuous\extractdatac.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\continuous\findpeaks.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\continuous\fitlinesc.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\continuous\ftestc.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\continuous\locdetrend.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\continuous\locsmooth.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\continuous\menu.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\continuous\mtdspecgramc.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\continuous\mtdspectrumc.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\continuous\mtfftc.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\continuous\mtpowerandfstatc.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\continuous\mtspecgramc.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\continuous\mtspecgramtrigc.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\continuous\mtspectrum_of_spectrumc.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\continuous\mtspectrumc.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\continuous\mtspectrumc_unequal_length_trials.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\continuous\mtspectrumsegc.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\continuous\mtspectrumtrigc.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\continuous\nonst_stat.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\continuous\quadcof.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\continuous\quadinv.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\continuous\rmlinesc.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\continuous\rmlinesmovingwinc.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\continuous\runline.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\continuous\spsvd.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\helper\change_row_to_column.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\helper\check_consistency.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\helper\coherr.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\helper\cohmathelper.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\helper\den_jack.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\helper\dpsschk.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\helper\getfgrid.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\helper\getparams.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\helper\jackknife.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\helper\menu.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\helper\specerr.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\hybrid\coherencycpb.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\hybrid\coherencycpt.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\hybrid\coherencysegcpb.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\hybrid\coherencysegcpt.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\hybrid\cohgramcpb.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\hybrid\cohgramcpt.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\hybrid\menu.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\hybrid\sta.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\hybrid\staogram.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\menu.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\plots\menu.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\plots\plot_matrix.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\plots\plot_vector.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\plots\plotsig.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\plots\plotsigdiff.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\pointbinned\coherencypb.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\pointbinned\coherencysegpb.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\pointbinned\cohgrampb.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\pointbinned\cohmatrixpb.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\pointbinned\createdatamatpb.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\pointbinned\CrossSpecMatpb.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\pointbinned\extractdatapb.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\pointbinned\menu.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\pointbinned\mtdspecgrampb.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\pointbinned\mtdspectrumpb.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\pointbinned\mtfftpb.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\pointbinned\mtspecgrampb.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\pointbinned\mtspecgramtrigpb.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\pointbinned\mtspectrumpb.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\pointbinned\mtspectrumsegpb.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\pointbinned\mtspectrumtrigpb.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\pointtimes\binspikes.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\pointtimes\coherencypt.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\pointtimes\coherencysegpt.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\pointtimes\cohgrampt.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\pointtimes\cohmatrixpt.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\pointtimes\countsig.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\pointtimes\createdatamatpt.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\pointtimes\CrossSpecMatpt.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\pointtimes\extractdatapt.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\pointtimes\isi.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\pointtimes\menu.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\pointtimes\minmaxsptimes.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\pointtimes\mtdspecgrampt.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\pointtimes\mtdspectrumpt.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\pointtimes\mtfftpt.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\pointtimes\mtspecgrampt.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\pointtimes\mtspecgramtrigpt.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\pointtimes\mtspectrumpt.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\pointtimes\mtspectrumsegpt.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\pointtimes\mtspectrumtrigpt.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\pointtimes\padNaN.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\pointtimes\psth.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\specscope\load_scope.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\specscope\menu.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\specscope\rtf.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\specscope\specscope.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\specscope\specscopepp.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\specscope\start_display.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\statistical_tests\menu.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\statistical_tests\two_group_test_coherence.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\spectral_analysis\statistical_tests\two_group_test_spectrum.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\test\menu.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\test\mtspecgramc_fast.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\test\mtspecgramc_slow.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\test\myrandint.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\test\testAvg3.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\test\testAvg4.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\test\testscript.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\test\testspecgram.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\test\uispecerr.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\wave_browser\acoustic_features_MB.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\wave_browser\auto_classify.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\wave_browser\classify_spectra.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\wave_browser\configure_classify.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\wave_browser\feature_calc_script.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\wave_browser\menu.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\wave_browser\segment_calc_script.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_2_10\wave_browser\wave_browser.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_logo3.JPG</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chronux_logo4.png</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\chSplash.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\demoicon.gif</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\down.png</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\doxysearch.php</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\fortran.png</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\hp.png</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\index.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\left.png</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\linux.png</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\m2html.css</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\matlabicon.gif</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\menu.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\mex.png</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\pcode.png</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\right.png</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\sgi.png</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\simulinkicon.gif</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\solaris.png</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\up.png</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\documentation\windows.png</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\FAnalyze\documentation\FAnalyze_Manual.pdf</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\FAnalyze\documentation\TeXFiles\FAnalyze_Manual.aux</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\FAnalyze\documentation\TeXFiles\FAnalyze_Manual.dvi</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\FAnalyze\documentation\TeXFiles\FAnalyze_Manual.log</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\FAnalyze\documentation\TeXFiles\FAnalyze_Manual.tex</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\FAnalyze\documentation\TeXFiles\FAnalyze_Manual.tex.bak</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\FAnalyze\documentation\TeXFiles\GUI.jpg</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\FAnalyze\functions\CalcCurvature.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\FAnalyze\functions\CalcReorientAngle.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\FAnalyze\functions\FAnalyze.fig</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\FAnalyze\functions\FAnalyze.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\FAnalyze\functions\FindDuration.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\FAnalyze\functions\JointDist.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\FAnalyze\functions\ProbDist1D.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\FAnalyze\functions\ProbDist2D.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\FAnalyze\functions\runline.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\FTrack\documentation\FTrack_Manual.pdf</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\FTrack\documentation\TeXFiles\ExCleanRegion.eps</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\FTrack\documentation\TeXFiles\ExDirtyRegion.eps</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\FTrack\documentation\TeXFiles\exframe.eps</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\FTrack\documentation\TeXFiles\exframe.prn</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\FTrack\documentation\TeXFiles\ExViewTraj.eps</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\FTrack\documentation\TeXFiles\FTrack_Manual.aux</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\FTrack\documentation\TeXFiles\FTrack_Manual.dvi</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\FTrack\documentation\TeXFiles\FTrack_Manual.log</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\FTrack\documentation\TeXFiles\FTrack_Manual.tex</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\FTrack\documentation\TeXFiles\FTrack_Manual.tex.bak</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\FTrack\documentation\TeXFiles\GUI.jpg</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\FTrack\FTrack_v09_03.zip</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\FTrack\functions\CleanData.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\FTrack\functions\FindFly.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\FTrack\functions\fit_ellipse.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\FTrack\functions\FlyOrient.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\FTrack\functions\FlyTracker.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\FTrack\functions\FTrack.fig</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\FTrack\functions\FTrack.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\FTrack\functions\pca1.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\README.txt</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\@videoReader\close.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\@videoReader\getframe.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\@videoReader\getinfo.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\@videoReader\getnext.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\@videoReader\next.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\@videoReader\seek.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\@videoReader\step.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\@videoReader\videoReader.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\@videoWriter\addframe.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\@videoWriter\close.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\@videoWriter\getinfo.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\@videoWriter\videoWriter.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\defaultVideoIOPlugin.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\FAQ.txt</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\GPL.txt</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\INSTALL.dshow.txt</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\MIT.txt</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\README.txt</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\TODO.txt</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\videoread.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\videoReader_DirectShow.mexw32</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\videoWriter_DirectShow.mexw32</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\@videoReader\close.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\@videoReader\getframe.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\@videoReader\getinfo.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\@videoReader\getnext.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\@videoReader\next.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\@videoReader\seek.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\@videoReader\step.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\@videoReader\videoReader.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\@videoWriter\addframe.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\@videoWriter\close.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\@videoWriter\getinfo.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\@videoWriter\videoWriter.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\defaultVideoIOPlugin.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\FAQ.txt</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\GPL.txt</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\INSTALL.dshow.txt</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\MIT.txt</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\README.txt</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\TODO.txt</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\videoread.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\videoReader_DirectShow.mexw32</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\videoWriter_DirectShow.mexw32</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\@videoReader\close.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\@videoReader\getframe.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\@videoReader\getinfo.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\@videoReader\getnext.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\@videoReader\next.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\@videoReader\seek.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\@videoReader\step.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\@videoReader\videoReader.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\@videoWriter\addframe.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\@videoWriter\close.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\@videoWriter\getinfo.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\@videoWriter\videoWriter.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\defaultVideoIOPlugin.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\FAQ.txt</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\GPL.txt</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\INSTALL.dshow.txt</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\MIT.txt</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\README.txt</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\TODO.txt</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\videoread.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\videoReader_DirectShow.mexw32</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\videoWriter_DirectShow.mexw32</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\instructions.txt</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\License.txt</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\archive</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\border.mat</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\cltest.mat</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\cltrain.mat</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\co2.mat</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\ethanol.mat</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\fig10_1.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\fig11_1.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\fig11_4.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\fig11_5.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\fig13_1.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\fig1_1.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\fig1_2.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\fig2_2.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\fig2_3.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\fig2_4.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\fig2_5.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\fig2_6.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\fig2_7.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\fig3_1.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\fig4_1.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\fig4_2.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\fig4_3.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\fig4_4.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\fig5_1.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\fig5_2.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\fig5_3.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\fig5_4.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\fig5_5.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\fig5_6.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\fig6_1.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\fig6_2.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\fig6_3.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\fig6_4.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\fig6_5.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\fig6_6.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\fig6_7.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\fig7_1.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\fig7_2.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\fig7_3.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\fig7_4.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\fig7_5.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\fig7_6.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\fig8_1.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\fig8_2.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\fig8_3.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\fig9_1.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\fig9_2.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\geyser.mat</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\heart.mat</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\iris.mat</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\livmet.mat</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\mcyc.mat</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\mine.mat</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\mmsamp.mat</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\morths.mat</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\penny.mat</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\runbook.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\spencer.mat</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\stamp.mat</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Book\trimod.mat</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\m\aic.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\m\aicplot.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\m\backtr.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\m\fitted.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\m\gcv.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\m\gcvplot.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\m\hatmatrix.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\m\invlink.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\m\kappa0.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\m\lcv.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\m\lcvplot.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\m\lf_censor.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\m\lfband.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\m\lfgui.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\m\lfknots.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\m\lfmarg.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\m\lfplot.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\m\lfsmooth.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\m\locfit.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\m\locfit_all.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\m\plotbyfactor.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\m\predict.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\m\residuals.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\m\rsum.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\m\scb.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\m\smooth_lf.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\m\spence15.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\m\spence21.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\m\vecr.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\mex\dll\mexlf.dll</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\mex\dll\mexpp.dll</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\mex\mexlf.mexa64</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\mex\mexlf.mexglx</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\mex\mexlf.mexw32</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\mex\mexpp.mexa64</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\mex\mexpp.mexglx</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\mex\mexpp.mexw32</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Neuro\050527_correct.mat</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Neuro\050907_correct.mat</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Neuro\lfex1.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Neuro\lfex2.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Neuro\lmem5312.mat</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Neuro\lmem5321.mat</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\README</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Source\compile.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Source\design.h</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Source\lfcons.h</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Source\lfev.c</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Source\lfev.h</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Source\lffuns.h</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Source\lfstruc.h</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Source\lfwin.h</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Source\liblfev.c</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Source\liblocf.c</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Source\libmut.c</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Source\libmut_win.c</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Source\libtube.c</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Source\local.h</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Source\locf.h</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Source\Makefile</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Source\mexlf.c</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Source\mexlf.mexa64</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Source\mexlf.mexw64</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Source\mexpp.c</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Source\mexpp.mexa64</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Source\mexpp.mexw64</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Source\mlfut.c</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Source\mut.h</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Source\mutil.h</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\locfit\Source\tube.h</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\manual.pdf</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\old\changes021406.txt</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\old\changes091206.txt</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\old\CrossSpecMat.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\old\tutorial\Analysis.ppt</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\old\tutorial\significant-spike-field-coherenceMBL2005.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\old\tutorial\spectraMBL2005.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\old\tutorial\spike-field-coherenceMBL2005.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\release_notes.txt</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\chronux.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\continuous\coherencyc.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\continuous\coherencyc_unequal_length_trials.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\continuous\coherencysegc.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\continuous\cohgramc.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\continuous\cohmatrixc.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\continuous\createdatamatc.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\continuous\CrossSpecMatc.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\continuous\evoked.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\continuous\extractdatac.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\continuous\findpeaks.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\continuous\fitlinesc.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\continuous\ftestc.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\continuous\locdetrend.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\continuous\locsmooth.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\continuous\mtdspecgramc.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\continuous\mtdspectrumc.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\continuous\mtfftc.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\continuous\mtpowerandfstatc.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\continuous\mtspecgramc.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\continuous\mtspecgramtrigc.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\continuous\mtspectrum_of_spectrumc.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\continuous\mtspectrumc.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\continuous\mtspectrumc_unequal_length_trials.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\continuous\mtspectrumsegc.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\continuous\mtspectrumtrigc.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\continuous\nonst_stat.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\continuous\quadcof.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\continuous\quadinv.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\continuous\rmlinesc.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\continuous\rmlinesmovingwinc.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\continuous\runline.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\continuous\spsvd.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\helper\change_row_to_column.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\helper\check_consistency.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\helper\coherr.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\helper\cohmathelper.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\helper\den_jack.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\helper\dpsschk.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\helper\getfgrid.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\helper\getparams.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\helper\jackknife.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\helper\specerr.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\hybrid\coherencycpb.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\hybrid\coherencycpt.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\hybrid\coherencysegcpb.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\hybrid\coherencysegcpt.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\hybrid\cohgramcpb.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\hybrid\cohgramcpt.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\hybrid\sta.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\hybrid\staogram.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\plots\plot_matrix.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\plots\plot_vector.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\plots\plotsig.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\plots\plotsigdiff.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\pointbinned\coherencypb.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\pointbinned\coherencysegpb.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\pointbinned\cohgrampb.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\pointbinned\cohmatrixpb.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\pointbinned\createdatamatpb.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\pointbinned\CrossSpecMatpb.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\pointbinned\extractdatapb.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\pointbinned\mtdspecgrampb.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\pointbinned\mtdspectrumpb.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\pointbinned\mtfftpb.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\pointbinned\mtspecgrampb.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\pointbinned\mtspecgramtrigpb.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\pointbinned\mtspectrumpb.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\pointbinned\mtspectrumsegpb.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\pointbinned\mtspectrumtrigpb.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\pointtimes\binspikes.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\pointtimes\coherencypt.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\pointtimes\coherencysegpt.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\pointtimes\cohgrampt.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\pointtimes\cohmatrixpt.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\pointtimes\countsig.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\pointtimes\createdatamatpt.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\pointtimes\CrossSpecMatpt.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\pointtimes\extractdatapt.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\pointtimes\isi.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\pointtimes\minmaxsptimes.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\pointtimes\mtdspecgrampt.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\pointtimes\mtdspectrumpt.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\pointtimes\mtfftpt.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\pointtimes\mtspecgrampt.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\pointtimes\mtspecgrampt_optimized.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\pointtimes\mtspecgramtrigpt.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\pointtimes\mtspectrumpt.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\pointtimes\mtspectrumsegpt.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\pointtimes\mtspectrumtrigpt.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\pointtimes\padNaN.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\pointtimes\psth.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\specscope\load_scope.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\specscope\rtf.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\specscope\specscope.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\specscope\specscopepp.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\specscope\start_display.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\statistical_tests\two_group_test_coherence.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\spectral_analysis\statistical_tests\two_group_test_spectrum.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\wave_browser\acoustic_features_MB.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\wave_browser\auto_classify.fig</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\wave_browser\auto_classify.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\wave_browser\classify_spectra.fig</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\wave_browser\classify_spectra.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\wave_browser\configure_classify.fig</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\wave_browser\configure_classify.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\wave_browser\feature_calc_script.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\wave_browser\html\auto_classify-scaled.png</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\wave_browser\html\class_members-scaled.png</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\wave_browser\html\class_view-scaled.png</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\wave_browser\html\classify_spectra_help.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\wave_browser\html\comparison_mode-scaled.png</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\wave_browser\html\configure_classify-scaled.png</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\wave_browser\html\opening_view-scaled.png</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\wave_browser\html\wave_browser-first-seg-scaled.png</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\wave_browser\html\wave_browser-main-scaled.png</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\wave_browser\html\wave_browser_help.html</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\wave_browser\segment_calc_script.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\wave_browser\wave_browser.fig</file>
+      <file>${PROJECT_ROOT}\custom_stuff\Chronux\chronux_2_12\wave_browser\wave_browser.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\clustering_coef_bu.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\clustering_coef_wu.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\cognitive_network_properties.m</file>
@@ -603,6 +1339,41 @@ Include :
       <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\plugins\firfilt1.6.1\minphaserceps.m</file>
       <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\plugins\firfilt1.6.1\pop_eegfiltnew.m</file>
       <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\plugins\firfilt1.6.1\windows.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\agreement.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\assortativity_wei.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\betweenness_bin.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\betweenness_wei.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\breadth.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\charpath.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\clustering_coef_bu.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\community_louvain.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\degrees_dir.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\degrees_und.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\diffusion_efficiency.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\distance_bin.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\distance_wei_floyd.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\efficiency_bin.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\evaluate_generative_model.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\generative_model.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\get_components.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\kcore_bd.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\kcore_bu.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\matching_ind.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\mean_first_passage_time.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\null_model_und_sign.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\path_transitivity.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\randmio_dir_signed.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\randmio_und.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\randmio_und_signed.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\reachdist.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\resource_efficiency_bin.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\retrieve_shortest_path.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\rout_efficiency.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\search_information.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\strengths_dir.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\strengths_und.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\strengths_und_sign.m</file>
+      <file>C:\Users\Yacine\Documents\MATLAB\Motif analysis\BCT\2017_01_15_BCT\weight_conversion.m</file>
     </fileset.depfun>
     <fileset.resources>
       <file>${PROJECT_ROOT}\Coherence</file>
