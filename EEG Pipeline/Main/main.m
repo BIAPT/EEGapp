@@ -499,7 +499,7 @@ set(findobj('Tag','feedback'), 'String', textLabel);
 fileName = evalin('base','fileName');
 workingDirectory = evalin('base','workingDirectory');
 if get(findobj('Tag','Spectopomap'), 'Value') == 1
-    if strcmp(fileName,'no file') == 0 && strcmp(workingDirectory,'No directory') == 0
+    if (iscell(fileName) == 1 && strcmp(workingDirectory,'No directory') == 0) || (strcmp(fileName,'no file') == 0 && strcmp(workingDirectory,'No directory') == 0)
         InterfaceObj=findobj(gcf,'Enable','on');
         set(InterfaceObj,'Enable','off');%disable the main window
         run('Spectrogram_Topog.m');%run the spectrogram figure
@@ -662,7 +662,7 @@ set(findobj('Tag','feedback'), 'String', textLabel);
 fileName = evalin('base','fileName');
 workingDirectory = evalin('base','workingDirectory');
 if get(findobj('Tag','phase_amplitude'), 'Value') == 1
-    if strcmp(fileName,'no file') == 0 && strcmp(workingDirectory,'No directory') == 0
+    if (iscell(fileName) == 1 && strcmp(workingDirectory,'No directory') == 0) || (strcmp(fileName,'no file') == 0 && strcmp(workingDirectory,'No directory') == 0)
         InterfaceObj=findobj(gcf,'Enable','on');
         set(InterfaceObj,'Enable','off');
         run('Phase_Amplitude_Coupling.m');
@@ -708,7 +708,7 @@ set(findobj('Tag','feedback'), 'String', textLabel);
 fileName = evalin('base','fileName');
 workingDirectory = evalin('base','workingDirectory');
 if get(findobj('Tag','coherence'), 'Value') == 1
-    if strcmp(fileName,'no file') == 0 && strcmp(workingDirectory,'No directory') == 0
+    if (iscell(fileName) == 1 && strcmp(workingDirectory,'No directory') == 0) || (strcmp(fileName,'no file') == 0 && strcmp(workingDirectory,'No directory') == 0)
         %call the m file
         InterfaceObj=findobj(gcf,'Enable','on');
         set(InterfaceObj,'Enable','off');
@@ -760,7 +760,7 @@ set(findobj('Tag','feedback'), 'String', textLabel);
 fileName = evalin('base','fileName');
 workingDirectory = evalin('base','workingDirectory');
 if get(findobj('Tag','pli'), 'Value') == 1
-    if strcmp(fileName,'no file') == 0 && strcmp(workingDirectory,'No directory') == 0
+    if (iscell(fileName) == 1 && strcmp(workingDirectory,'No directory') == 0) || (strcmp(fileName,'no file') == 0 && strcmp(workingDirectory,'No directory') == 0)
         
         InterfaceObj=findobj(gcf,'Enable','on');
         set(InterfaceObj,'Enable','off');
@@ -810,7 +810,7 @@ set(findobj('Tag','feedback'), 'String', textLabel);
 fileName = evalin('base','fileName');
 workingDirectory = evalin('base','workingDirectory');
 if get(findobj('Tag','dpli'), 'Value') == 1
-    if strcmp(fileName,'no file') == 0 && strcmp(workingDirectory,'No directory') == 0
+    if (iscell(fileName) == 1 && strcmp(workingDirectory,'No directory') == 0) || (strcmp(fileName,'no file') == 0 && strcmp(workingDirectory,'No directory') == 0)
         
         InterfaceObj=findobj(gcf,'Enable','on');
         set(InterfaceObj,'Enable','off');
@@ -858,7 +858,7 @@ set(findobj('Tag','feedback'), 'String', textLabel);
 fileName = evalin('base','fileName');
 workingDirectory = evalin('base','workingDirectory');
 if get(findobj('Tag','symbolic'), 'Value') == 1
-    if strcmp(fileName,'no file') == 0 && strcmp(workingDirectory,'No directory') == 0
+    if (iscell(fileName) == 1 && strcmp(workingDirectory,'No directory') == 0) || (strcmp(fileName,'no file') == 0 && strcmp(workingDirectory,'No directory') == 0)
 
         InterfaceObj=findobj(gcf,'Enable','on');
         set(InterfaceObj,'Enable','off');
@@ -907,7 +907,7 @@ set(findobj('Tag','feedback'), 'String', textLabel);
 fileName = evalin('base','fileName');
 workingDirectory = evalin('base','workingDirectory');
 if get(findobj('Tag','graph'), 'Value') == 1
-    if strcmp(fileName,'no file') == 0 && strcmp(workingDirectory,'No directory') == 0
+    if (iscell(fileName) == 1 && strcmp(workingDirectory,'No directory') == 0) || (strcmp(fileName,'no file') == 0 && strcmp(workingDirectory,'No directory') == 0)
 
         InterfaceObj=findobj(gcf,'Enable','on');
         set(InterfaceObj,'Enable','off');
