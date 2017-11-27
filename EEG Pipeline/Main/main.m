@@ -22,7 +22,7 @@ function varargout = main(varargin)
 
 % Edit the above text to modify the response to help main
 
-% Last Modified by GUIDE v2.5 30-Aug-2017 22:04:11
+% Last Modified by GUIDE v2.5 26-Nov-2017 18:26:48
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -279,8 +279,19 @@ for iteration = 1:numbFiles
     end
     
     display(sprintf('Analyzing: %s',EEG.filename));
-    
-    
+    subset = evalin('base','subset');
+    if(strcmp(subset,'custom') == 1)
+       channel_subset = evalin('base','channelSubset');
+       %Need to reorder that thing 
+        originalData = EEG.data;
+        for i=1:length(channel_subset)
+            new_data(i,:) = originalData(channel_subset(i,1),:);
+            %TODO DO SAME STUFF FOR CHANNEL LOCATION!!! OR ELSE THE GRPAH
+            %THEORY STUFF AND SPECTOPO TOO WON"T WORK!
+        end
+        EEG.data = new_data;
+        EEG.nbchan = length(channel_subset);
+    end
     %% Spectopo
     %Check if spectopo is selected, if yes we run it
     if spectopomap == 1
@@ -554,6 +565,7 @@ function figure1_CreateFcn(hObject, eventdata, handles)
 % handles    empty - handles not created until after all CreateFcns called
 movegui(hObject,'center');
 assignin('base','orderType','default');
+assignin('base','subset','default');
 assignin('base','isWarning',0); %set warning to 0
 movegui(hObject,'center');
 
@@ -962,3 +974,23 @@ set(InterfaceObj,'Enable','off');
 run('bandpass_settings.m');
 uiwait(gcf);        
 set(InterfaceObj,'Enable','on');
+
+
+% --------------------------------------------------------------------
+function Select_channels_Callback(hObject, eventdata, handles)
+% hObject    handle to Select_channels (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+fileName = evalin('base','fileName');
+workingDirectory = evalin('base','workingDirectory');
+    if (iscell(fileName) == 1 && strcmp(workingDirectory,'No directory') == 0) || (strcmp(fileName,'no file') == 0 && strcmp(workingDirectory,'No directory') == 0) 
+        InterfaceObj=findobj(gcf,'Enable','on');
+        set(InterfaceObj,'Enable','off');%disabling the current window
+        run('select_channels.m'); %running the program (Reorder)
+        uiwait(gcf); %wait for it to be done
+
+        set(InterfaceObj,'Enable','on');%re-enabling the window
+    else
+        textLabel = sprintf('Please make sure you loaded at least one EEG data set and selected a saving directory.');
+        set(findobj('Tag','feedback'), 'String',textLabel);
+    end
