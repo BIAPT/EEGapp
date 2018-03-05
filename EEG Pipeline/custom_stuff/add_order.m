@@ -4,8 +4,15 @@ function [ output_args ] = add_order( new_element )
     EEG = evalin('base','EEG');
     count = evalin('base','count');
     order = evalin('base','order');
-    order = [order ; new_element];
-    set(findobj('Tag','order_tag'), 'String', num2str(order'));  
+    space = ' ';
+    if(count == 0)
+        order = [order,new_element];    
+    else
+        order = [order,space,new_element];
+    end
+    
+    display(order')
+    set(findobj('Tag','order_tag'), 'String', order);  
     count = count + 1;
 	assignin('base','order',order);
     assignin('base','count',count);

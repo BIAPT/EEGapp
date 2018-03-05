@@ -281,16 +281,33 @@ for iteration = 1:numbFiles
     display(sprintf('Analyzing: %s',EEG.filename));
     subset = evalin('base','subset');
     if(strcmp(subset,'custom') == 1)
-       channel_subset = evalin('base','channelSubset');
-       %Need to reorder that thing 
-        originalData = EEG.data;
-        for i=1:length(channel_subset)
-            new_data(i,:) = originalData(channel_subset(i,1),:);
-            %TODO DO SAME STUFF FOR CHANNEL LOCATION!!! OR ELSE THE GRPAH
-            %THEORY STUFF AND SPECTOPO TOO WON"T WORK!
+        EEGOrderString =  evalin('base','channelSubset');
+        EEGOrderString = strsplit(EEGOrderString);
+        display('EEGorder string')
+        display(EEGOrderString);
+        labels = {EEG.chanlocs.labels}.';
+        index = 1;
+
+        for i=1:length(EEGOrderString)
+           location = 0;
+           for j=1:EEG.nbchan
+               EEGOrderString{i}
+               labels{j}
+               if(strcmp(EEGOrderString{i},labels{j}) == 1)
+                   location  = j;
+                   break;
+               end
+           end
+           if(location ~= 0)
+            new_data(index,:) = EEG.data(location,:);
+            new_chanlocs(index,:) = EEG.chanlocs(:,location);
+            index = index + 1;
+           end
         end
         EEG.data = new_data;
-        EEG.nbchan = length(channel_subset);
+        EEG.chanlocs = new_chanlocs;
+        EEG.nbchan = index - 1;
+        clearvars new_data new_chanlocs
     end
     %% Spectopo
     %Check if spectopo is selected, if yes we run it

@@ -112,62 +112,42 @@ else
 end
 
 %Take the order as inputed by the user
-if get(findobj('Tag','name'), 'Value') == 1
+if (get(findobj('Tag','name'), 'Value') == 1 || get(findobj('Tag','selection'), 'Value') == 1)
    % NEED TO TRANSLATE THE NAMES INTO NUMBER
    EEGOrderString = (get(findobj('Tag','order_tag'), 'String'));
    EEGOrderString = strsplit(EEGOrderString);
    EEGOrder = [];
    labels = {EEG.chanlocs.labels}.';
+   index = 1;
    for i=1:length(EEGOrderString)
-      found = 0;
+      alreadyFound = 0;
       for j=1:EEG.nbchan
-          EEGOrderString{i}
-          labels{j}
-          if(strcmp(EEGOrderString{i},labels{j}) == 1)
-              found = 1;
-              EEGOrder = [EEGOrder ; j];
-              break;
+          if(strcmp(EEGOrderString{i},labels{j}) == 1 && alreadyFound == 0)
+              if(index == 1)
+                 EEGOrder = [EEGOrder,labels{j}]; 
+              else
+                  EEGOrder = [EEGOrder,' ',labels{j}];
+              end
+              alreadyFound = 1;
+              index = index + 1;
+          elseif(strcmp(EEGOrderString{i},labels{j}) == 1 && alreadyFound == 1)
+             textlabel = ['Please make sure there is no duplicate.'];  
+             set(findobj('Tag','feedback'), 'String',textlabel);
+             return;  
           end
       end
-      if(found == 0)
-        textlabel = ['Please make sure all names are legal, name: ', EEGOrderString{i}, ' is not correct.'];  
-        set(findobj('Tag','feedback'), 'String',textlabel);    
-        return; 
-      end
+     
    end
-   
-elseif (get(findobj('Tag','number'), 'Value') == 1 || get(findobj('Tag','selection'), 'Value') == 1)
-EEGOrder = (str2num(get(findobj('Tag','order_tag'), 'String')))';
+
 else
     textlabel = ['Please make sure one of the three option is selected.'];  
     set(findobj('Tag','feedback'), 'String',textlabel);
     return;
 end
 
-%Then iterate through each channels and check that each channels value are
-%legal
-for i =1:length(EEGOrder)
-   if EEGOrder(i,1) > EEG.nbchan || EEGOrder(i,1) < 1 
-       textlabel = ['Make sure the channels are not greater than the number of channels or smaller than 1.'];  
-       set(findobj('Tag','feedback'), 'String',textlabel);
-       return
-   end
-end
-
-%Here we go through the new order and check if there is duplicates
-oldOrder = (1:EEG.nbchan)';
-for i=1:length(EEGOrder)
-    if oldOrder(EEGOrder(i,1),1) ~= 0
-        oldOrder(EEGOrder(i,1),1) = 0;
-    else
-        textlabel = ['Please make sure there is no duplicate.'];  
-        set(findobj('Tag','feedback'), 'String',textlabel);
-        return;
-    end
-end
 
 %If everything is legal with the input we save the new order to workspace
-assignin('base','channelSubset',EEGOrder);
+assignin('base','channelSubset',get(findobj('Tag','order_tag'), 'String'));
 assignin('base','subset','custom'); %If everything worked, then the order is custom, not default
 
 workingDirectory = lower(evalin('base','workingDirectory'));
@@ -177,13 +157,8 @@ end
 savingDirectory = [workingDirectory '/' EEG.filename];
    
 ordering = (get(findobj('Tag','order_tag'), 'String'));
-if get(findobj('Tag','name'), 'Value') == 1
-   isName = 1;
-else
-    isName = 0;
-end
 orderData.ordering = ordering;
-orderData.isName = isName;
+orderData.isName = 1;
 save([savingDirectory '/channelsSubset.mat'],'orderData');
 
 close;
@@ -214,7 +189,6 @@ set(findobj('Tag','feedback'),'FontSize',font_size)
 set(findobj('Tag','order_tag'),'FontSize',font_size)
 set(findobj('Tag','rearrengeEEG'),'FontSize',font_size)
 set(findobj('Tag','name'),'FontSize',font_size)
-set(findobj('Tag','number'),'FontSize',font_size)
 set(findobj('Tag','selection'),'FontSize',font_size)
 set(findobj('Tag','load_button'),'FontSize',font_size)
 

@@ -1,17 +1,19 @@
-<deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="1870870458" file="C:\Users\Yacine\Documents\MATLAB\EEG Pipeline\EEGapp.prj" location="C:\Users\Yacine\Documents\MATLAB\EEG Pipeline" name="EEGapp" target="target.mlapps" target-name="Package App">
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration build-checksum="3689330828" file="C:\Users\Fabien Dal Maso\Documents\GitHub\EEGapp\EEG Pipeline\EEGapp.prj" location="C:\Users\Fabien Dal Maso\Documents\GitHub\EEGapp\EEG Pipeline" name="EEGapp" preferred-package-location="C:\Users\Fabien Dal Maso\Documents\GitHub\EEGapp\EEG Pipeline\EEGapp\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
     <param.appname>EEGapp</param.appname>
-    <param.authnamewatermark>Yacine Mahdid and Dr. Blain Moraes</param.authnamewatermark>
-    <param.email>Yacine.mahdid@mail.mcgill.ca</param.email>
-    <param.company>Mcgill University</param.company>
-    <param.icon>${PROJECT_ROOT}\EEGapp_resources\icon_24.png</param.icon>
+    <param.icon>${PROJECT_ROOT}\EEGapp_resources\icon.ico</param.icon>
     <param.icons>
       <file>${PROJECT_ROOT}\EEGapp_resources\icon_48.png</file>
+      <file>${PROJECT_ROOT}\EEGapp_resources\icon_32.png</file>
       <file>${PROJECT_ROOT}\EEGapp_resources\icon_24.png</file>
       <file>${PROJECT_ROOT}\EEGapp_resources\icon_16.png</file>
     </param.icons>
+    <param.version>1.4</param.version>
+    <param.authnamewatermark>Yacine Mahdid and Dr. Blain Moraes</param.authnamewatermark>
+    <param.email>Yacine.mahdid@mail.mcgill.ca</param.email>
+    <param.company>Mcgill University</param.company>
     <param.summary>Official Release:
-Now Allows to select a subset of channels (not fully working yet)</param.summary>
+Now allows to select a subset of channels</param.summary>
     <param.description>Pipeline for analysis of continuous EEG data.
 Include : 
 &lt;ul&gt;
@@ -24,582 +26,62 @@ Include :
 &lt;li&gt;Graph Theory&lt;/li&gt;
 &lt;/ul&gt;</param.description>
     <param.screenshot />
-    <param.version>1.3.3</param.version>
-    <param.products.name />
-    <param.products.id />
-    <param.products.version />
-    <param.platforms>
-      <item>glnxa64</item>
-      <item>win64</item>
-      <item>win32</item>
-      <item>maci64</item>
-    </param.platforms>
-    <param.output>C:\Users\Yacine\Desktop</param.output>
-    <param.guid>e3d86748-df7e-4509-b68a-4381d2633ba4</param.guid>
+    <param.guid />
+    <param.net.saved.interface />
+    <param.installpath.string>\Mcgill University\EEGapp\</param.installpath.string>
+    <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
+    <param.logo />
+    <param.install.notes />
+    <param.intermediate>${PROJECT_ROOT}\EEGapp\for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\EEGapp\for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}\EEGapp\for_redistribution</param.output>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.embed.ctf>true</param.embed.ctf>
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.required.mcr.products>
+      <item>35000</item>
+      <item>35010</item>
+      <item>35001</item>
+    </param.required.mcr.products>
+    <param.web.mcr>true</param.web.mcr>
+    <param.package.mcr>false</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>true</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
     <unset>
       <param.screenshot />
-      <param.products.name />
-      <param.products.id />
-      <param.products.version />
+      <param.guid />
+      <param.net.saved.interface />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.logo />
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.embed.ctf />
+      <param.target.type />
+      <param.support.packages />
+      <param.web.mcr />
+      <param.package.mcr />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.log.file />
     </unset>
     <fileset.main>
       <file>${PROJECT_ROOT}\Main\main.m</file>
     </fileset.main>
-    <fileset.depfun>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet.fig</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_EdgCostumColor.fig</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_EdgCostumColor.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_LoadFiles.fig</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_LoadFiles.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_MapCfg.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_MergeMesh.fig</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_MergeMesh.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_ModuleColor.fig</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_ModuleColor.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_Option.fig</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_Option.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_Output_txt.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\cat.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\Contents.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\ctranspose.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\disp.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\display.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\double.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\end.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\fieldnames.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\file_array.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\horzcat.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\isnan.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\length.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\loadobj.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\ndims.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\numel.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\numeric.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\permute.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\private\datatypes.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\private\dim.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\private\dtype.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\private\file2mat.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\private\file2mat.mexw64</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\private\fname.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\private\mat2file.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\private\mat2file.mexw64</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\private\mystruct.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\private\offset.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\private\permission.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\private\resize_scales.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\private\scl_inter.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\private\scl_slope.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\reshape.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\size.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\subsasgn.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\subsref.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\transpose.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@file_array\vertcat.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\Contents.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\create.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\disp.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\display.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\fieldnames.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\nifti.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\decode_qform0.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\empty_hdr.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\encode_qform0.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\findindict.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\getdict.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\M2Q.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\mayo2nifti1.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\mayostruc.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\nifti_stats.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\niftistruc.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\Q2M.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\read_extras.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\read_hdr.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\read_hdr_raw.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\write_extras.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\private\write_hdr_raw.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\structn.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\subsasgn.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\@nifti\subsref.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\BrainNet_spm_check_orientations.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\BrainNet_spm_existfile.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\BrainNet_spm_existfile.mexw64</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\BrainNet_spm_fileparts.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\BrainNet_spm_matrix.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\BrainNet_spm_read_vols.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\BrainNet_spm_slice_vol.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\BrainNet_spm_slice_vol.mexw64</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\BrainNet_spm_str_manip.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\BrainNet_spm_type.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\BrainNet_spm_vol.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\Brain_net\BrainNet_spm8_files\BrainNet_spm_vol_nifti.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\Blan-Moraes Functions\graph_network_properties.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\average_network_properties.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\averagetopo.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\BCT\2017_01_15_BCT\agreement.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\BCT\2017_01_15_BCT\assortativity_wei.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\BCT\2017_01_15_BCT\betweenness_bin.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\BCT\2017_01_15_BCT\betweenness_wei.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\BCT\2017_01_15_BCT\breadth.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\BCT\2017_01_15_BCT\data_and_demos\demo_efficiency_measures_data.mat</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\BCT\2017_01_15_BCT\data_and_demos\demo_generative_models_data.mat</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\BCT\2017_01_15_BCT\data_and_demos\motif34lib.mat</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\BCT\2017_01_15_BCT\diffusion_efficiency.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\BCT\2017_01_15_BCT\distance_wei_floyd.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\BCT\2017_01_15_BCT\evaluate_generative_model.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\BCT\2017_01_15_BCT\generative_model.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\BCT\2017_01_15_BCT\get_components.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\BCT\2017_01_15_BCT\kcore_bd.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\BCT\2017_01_15_BCT\kcore_bu.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\BCT\2017_01_15_BCT\matching_ind.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\BCT\2017_01_15_BCT\mean_first_passage_time.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\BCT\2017_01_15_BCT\path_transitivity.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\BCT\2017_01_15_BCT\randmio_dir_signed.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\BCT\2017_01_15_BCT\reachdist.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\BCT\2017_01_15_BCT\resource_efficiency_bin.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\BCT\2017_01_15_BCT\retrieve_shortest_path.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\BCT\2017_01_15_BCT\rout_efficiency.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\BCT\2017_01_15_BCT\search_information.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\bpfilter.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Brain_net\BrainNet_AAL_Label.mat</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Brain_net\BrainNet_Background.tif</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Brain_net\BrainNet_Brodmann_Label.mat</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Brain_net\BrainNet_Manual.pdf</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\file_array.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\file2mat.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\file2mat.mexw64</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\mat2file.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Brain_net\BrainNet_spm8_files\@file_array\private\mat2file.mexw64</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Brain_net\BrainNet_spm8_files\@nifti\nifti.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\charpath.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\@videoReader\close.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\@videoReader\getframe.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\@videoReader\getinfo.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\@videoReader\getnext.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\@videoReader\next.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\@videoReader\seek.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\@videoReader\step.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\@videoReader\videoReader.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\@videoWriter\addframe.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\@videoWriter\close.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\@videoWriter\getinfo.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\@videoWriter\videoWriter.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\@videoReader\close.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\@videoReader\getframe.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\@videoReader\getinfo.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\@videoReader\getnext.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\@videoReader\next.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\@videoReader\seek.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\@videoReader\step.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\@videoReader\videoReader.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\@videoWriter\addframe.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\@videoWriter\close.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\@videoWriter\getinfo.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\@videoWriter\videoWriter.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\@videoReader\close.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\@videoReader\getframe.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\@videoReader\getinfo.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\@videoReader\getnext.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\@videoReader\next.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\@videoReader\seek.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\@videoReader\step.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\@videoReader\videoReader.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\@videoWriter\addframe.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\@videoWriter\close.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\@videoWriter\getinfo.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\@videoWriter\videoWriter.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\clustering_coef_bu.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\community_louvain.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\create_network2.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\create_sig_dPLI.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\d_PhaseLagIndex.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\d_PhaseLagIndex_surrogate.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\degrees_dir.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\degrees_und.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\delayRecons.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\distance_bin.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\efficiency_bin.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\F_EstimateProb.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\f_Integer2prob.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\f_nste.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\f_predictiontime.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\F_Symb2Int.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\modularity_louvain_und.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\mtspecgramcWaitBar.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\null_model_und_sign.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\numSubplots.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\plot_peaktroughmax.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\randmio_und.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\randmio_und_signed.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\scout_reorg.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\scout_reorg2.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\strengths_dir.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\strengths_und.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\strengths_und_sign.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\test_PLI_stats.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\tweaked_topoplot.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\w_PhaseLagIndex.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\w_PhaseLagIndex_surrogate.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\weight_conversion.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\custom_stuff\WinOnTop.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\Documentation\Documentation.pdf</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\Load\load_eeg.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\Main\Analysis Techniques\coherence_function.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\Main\Analysis Techniques\dpli_function.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\Main\Analysis Techniques\graph_theory_function.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\Main\Analysis Techniques\phase_amplitude_coupling_function.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\Main\Analysis Techniques\pli_function.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\Main\Analysis Techniques\spectopo_function.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\Main\Analysis Techniques\ste_function.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\EEG Pipeline\Main\settings.mat</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\eeglab13_6_5b\functions\@eegobj\display.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\eeglab13_6_5b\functions\@eegobj\eegobj.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\eeglab13_6_5b\functions\@eegobj\fieldnames.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\eeglab13_6_5b\functions\@eegobj\horzcat2.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\eeglab13_6_5b\functions\@eegobj\isfield.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\eeglab13_6_5b\functions\@eegobj\isstruct.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\eeglab13_6_5b\functions\@eegobj\length.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\eeglab13_6_5b\functions\@eegobj\orderfields.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\eeglab13_6_5b\functions\@eegobj\rmfield.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\eeglab13_6_5b\functions\@eegobj\simpletest.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\eeglab13_6_5b\functions\@eegobj\subsasgn.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\eeglab13_6_5b\functions\@eegobj\subsref.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\eeglab13_6_5b\functions\@mmo\binaryopp.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\eeglab13_6_5b\functions\@mmo\bsxfun.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\eeglab13_6_5b\functions\@mmo\changefile.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\eeglab13_6_5b\functions\@mmo\checkcopies_local.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\eeglab13_6_5b\functions\@mmo\checkworkspace.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\eeglab13_6_5b\functions\@mmo\ctranspose.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\eeglab13_6_5b\functions\@mmo\display.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\eeglab13_6_5b\functions\@mmo\double.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\eeglab13_6_5b\functions\@mmo\end.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\eeglab13_6_5b\functions\@mmo\fft.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\eeglab13_6_5b\functions\@mmo\isnumeric.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\eeglab13_6_5b\functions\@mmo\length.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\eeglab13_6_5b\functions\@mmo\mmo.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\eeglab13_6_5b\functions\@mmo\ndims.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\eeglab13_6_5b\functions\@mmo\permute.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\eeglab13_6_5b\functions\@mmo\reshape.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\eeglab13_6_5b\functions\@mmo\size.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\eeglab13_6_5b\functions\@mmo\subsasgn.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\eeglab13_6_5b\functions\@mmo\subsasgn_old.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\eeglab13_6_5b\functions\@mmo\subsref.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\eeglab13_6_5b\functions\@mmo\sum.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\eeglab13_6_5b\functions\@mmo\transpose.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\eeglab13_6_5b\functions\@mmo\unitaryopp.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Add-Ons\Apps\EEGapp\code\eeglab13_6_5b\functions\@mmo\var.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\dataio\HowToReadNexFilesInMatlab\nex_cont.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\dataio\HowToReadNexFilesInMatlab\nex_info.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\dataio\HowToReadNexFilesInMatlab\nex_marker.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\dataio\HowToReadNexFilesInMatlab\nex_ts.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\dataio\HowToReadNexFilesInMatlab\nex_wf.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\FAnalyze\functions\CalcCurvature.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\FAnalyze\functions\CalcReorientAngle.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\FAnalyze\functions\FindDuration.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\FAnalyze\functions\runline.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\FTrack\functions\CleanData.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\FTrack\functions\FindFly.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\FTrack\functions\fit_ellipse.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\FTrack\functions\FlyOrient.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\FTrack\functions\FlyTracker.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\FTrack\functions\pca1.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\@videoReader\close.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\@videoReader\getframe.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\@videoReader\getinfo.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\@videoReader\getnext.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\@videoReader\next.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\@videoReader\seek.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\@videoReader\step.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\@videoReader\videoReader.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\@videoWriter\addframe.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\@videoWriter\close.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\@videoWriter\getinfo.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\@videoWriter\videoWriter.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006a\defaultVideoIOPlugin.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\@videoReader\close.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\@videoReader\getframe.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\@videoReader\getinfo.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\@videoReader\getnext.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\@videoReader\next.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\@videoReader\seek.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\@videoReader\step.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\@videoReader\videoReader.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\@videoWriter\addframe.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\@videoWriter\close.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\@videoWriter\getinfo.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2006b\@videoWriter\videoWriter.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\@videoReader\close.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\@videoReader\getframe.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\@videoReader\getinfo.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\@videoReader\getnext.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\@videoReader\next.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\@videoReader\seek.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\@videoReader\step.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\@videoReader\videoReader.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\@videoWriter\addframe.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\@videoWriter\close.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\@videoWriter\getinfo.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\fly_track\videoIO\videoIO_2007a\@videoWriter\videoWriter.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\border.mat</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\cltest.mat</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\cltrain.mat</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\co2.mat</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\ethanol.mat</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\fig10_1.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\fig11_1.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\fig11_4.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\fig11_5.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\fig13_1.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\fig1_1.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\fig1_2.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\fig2_2.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\fig2_3.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\fig2_4.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\fig2_5.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\fig2_6.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\fig2_7.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\fig3_1.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\fig4_1.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\fig4_2.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\fig4_3.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\fig4_4.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\fig5_1.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\fig5_2.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\fig5_3.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\fig5_4.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\fig5_5.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\fig5_6.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\fig6_1.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\fig6_2.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\fig6_3.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\fig6_4.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\fig6_5.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\fig6_6.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\fig6_7.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\fig7_1.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\fig7_2.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\fig7_3.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\fig7_4.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\fig7_5.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\fig7_6.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\fig8_1.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\fig8_2.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\fig8_3.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\fig9_1.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\fig9_2.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\geyser.mat</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\heart.mat</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\iris.mat</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\livmet.mat</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\mcyc.mat</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\mine.mat</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\mmsamp.mat</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\morths.mat</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\penny.mat</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\spencer.mat</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\stamp.mat</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Book\trimod.mat</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\m\aic.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\m\aicplot.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\m\backtr.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\m\fitted.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\m\gcv.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\m\gcvplot.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\m\invlink.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\m\kappa0.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\m\lcv.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\m\lf_censor.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\m\lfband.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\m\lfknots.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\m\lfmarg.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\m\lfplot.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\m\locfit.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\m\plotbyfactor.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\m\predict.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\m\residuals.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\m\rsum.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\m\scb.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\m\spence15.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\m\spence21.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\m\vecr.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Neuro\050527_correct.mat</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Neuro\lmem5312.mat</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Source\mexlf.mexw64</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\locfit\Source\mexpp.mexw64</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\continuous\coherencyc.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\continuous\createdatamatc.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\continuous\findpeaks.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\continuous\fitlinesc.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\continuous\ftestc.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\continuous\locsmooth.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\continuous\mtdspecgramc.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\continuous\mtdspectrumc.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\continuous\mtfftc.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\continuous\mtspecgramc.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\continuous\mtspecgramtrigc.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\continuous\mtspectrumc.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\continuous\mtspectrumsegc.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\continuous\quadinv.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\helper\change_row_to_column.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\helper\check_consistency.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\helper\coherr.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\helper\cohmathelper.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\helper\dpsschk.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\helper\getfgrid.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\helper\getparams.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\helper\jackknife.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\helper\specerr.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\hybrid\coherencycpb.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\hybrid\coherencycpt.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\hybrid\sta.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\plots\plot_matrix.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\pointbinned\coherencypb.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\pointbinned\createdatamatpb.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\pointbinned\mtdspectrumpb.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\pointbinned\mtfftpb.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\pointbinned\mtspecgrampb.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\pointbinned\mtspectrumpb.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\pointtimes\coherencypt.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\pointtimes\createdatamatpt.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\pointtimes\extractdatapt.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\pointtimes\minmaxsptimes.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\pointtimes\mtdspectrumpt.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\pointtimes\mtfftpt.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\pointtimes\mtspecgrampt.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\pointtimes\mtspecgramtrigpt.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\pointtimes\mtspectrumpt.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\pointtimes\padNaN.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\spectral_analysis\specscope\start_display.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\wave_browser\acoustic_features_MB.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\wave_browser\auto_classify.fig</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\wave_browser\auto_classify.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\wave_browser\configure_classify.fig</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\Chronux\chronux_2_12\wave_browser\configure_classify.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\@eegobj\display.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\@eegobj\eegobj.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\@eegobj\fieldnames.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\@eegobj\horzcat2.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\@eegobj\isfield.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\@eegobj\isstruct.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\@eegobj\length.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\@eegobj\orderfields.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\@eegobj\rmfield.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\@eegobj\simpletest.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\@eegobj\subsasgn.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\@eegobj\subsref.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\@mmo\binaryopp.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\@mmo\bsxfun.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\@mmo\changefile.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\@mmo\checkcopies_local.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\@mmo\checkworkspace.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\@mmo\ctranspose.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\@mmo\display.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\@mmo\double.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\@mmo\end.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\@mmo\fft.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\@mmo\isnumeric.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\@mmo\length.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\@mmo\mmo.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\@mmo\ndims.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\@mmo\permute.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\@mmo\reshape.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\@mmo\size.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\@mmo\subsasgn.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\@mmo\subsasgn_old.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\@mmo\subsref.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\@mmo\sum.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\@mmo\transpose.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\@mmo\unitaryopp.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\@mmo\var.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\adminfunc\eeg_checkchanlocs.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\adminfunc\eeg_checkset.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\adminfunc\eeg_eval.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\adminfunc\eeg_getdatact.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\adminfunc\eeg_hist.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\adminfunc\eeg_options.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\adminfunc\eeg_optionsbackup.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\adminfunc\eeg_retrieve.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\adminfunc\eeg_store.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\adminfunc\eeglab_options.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\adminfunc\eeglabexefolder.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\adminfunc\error_bc.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\adminfunc\intersect_bc.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\adminfunc\is_sccn.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\adminfunc\iseeglabdeployed.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\adminfunc\ismatlab.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\adminfunc\ismember_bc.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\adminfunc\setdiff_bc.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\adminfunc\union_bc.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\adminfunc\unique_bc.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\adminfunc\vararg2str.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\guifunc\errordlg2.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\guifunc\finputcheck.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\guifunc\inputgui.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\guifunc\questdlg2.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\guifunc\supergui.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\guifunc\warndlg2.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\miscfunc\averef.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\popfunc\eeg_chantype.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\popfunc\eeg_decodechan.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\popfunc\eeg_eegrej.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\popfunc\eeg_emptyset.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\popfunc\eeg_insertbound.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\popfunc\eeg_interp.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\popfunc\eeg_lat2point.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\popfunc\eeg_point2lat.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\popfunc\eeg_urlatency.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\popfunc\pop_editeventvals.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\popfunc\pop_importepoch.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\popfunc\pop_loadset.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\popfunc\pop_saveset.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\popfunc\pop_select.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\sigprocfunc\adjustlocs.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\sigprocfunc\axcopy.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\sigprocfunc\blockave.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\sigprocfunc\cbar.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\sigprocfunc\changeunits.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\sigprocfunc\convertlocs.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\sigprocfunc\eegrej.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\sigprocfunc\epoch.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\sigprocfunc\fastif.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\sigprocfunc\floatwrite.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\sigprocfunc\gettempfolder.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\sigprocfunc\icadefs.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\sigprocfunc\isscript.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\sigprocfunc\loadtxt.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\sigprocfunc\matsel.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\sigprocfunc\mattocell.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\sigprocfunc\nan_mean.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\sigprocfunc\parsetxt.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\sigprocfunc\readeetraklocs.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\sigprocfunc\readelp.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\sigprocfunc\readlocs.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\sigprocfunc\readneurolocs.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\sigprocfunc\readtxtfile.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\sigprocfunc\sbplot.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\sigprocfunc\spec.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\sigprocfunc\spectopo.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\sigprocfunc\sph2topo.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\sigprocfunc\textsc.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\sigprocfunc\topo2sph.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\sigprocfunc\topoplot.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\sigprocfunc\uigetfile2.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\sigprocfunc\uiputfile2.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\studyfunc\std_chaninds.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\studyfunc\toporeplot.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\timefreqfunc\dftfilt.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\functions\timefreqfunc\timef.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\plugins\dipfit2.3\dipfitdefs.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\plugins\firfilt1.6.1\findboundaries.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\plugins\firfilt1.6.1\firfilt.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\plugins\firfilt1.6.1\firfiltdcpadded.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\plugins\firfilt1.6.1\firfiltsplit.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\plugins\firfilt1.6.1\firws.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\plugins\firfilt1.6.1\minphaserceps.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\plugins\firfilt1.6.1\pop_eegfiltnew.m</file>
-      <file>C:\Users\Yacine\Documents\MATLAB\eeglab13_6_5b\plugins\firfilt1.6.1\windows.m</file>
-    </fileset.depfun>
     <fileset.resources>
       <file>${PROJECT_ROOT}\Coherence</file>
       <file>${PROJECT_ROOT}\custom_stuff</file>
@@ -620,12 +102,39 @@ Include :
     </fileset.resources>
     <fileset.package />
     <build-deliverables>
-      <file location="C:\Users\Yacine" name="Desktop" optional="false">C:\Users\Yacine\Desktop</file>
+      <file location="${PROJECT_ROOT}\EEGapp\for_testing" name="splash.png" optional="false">C:\Users\Fabien Dal Maso\Documents\GitHub\EEGapp\EEG Pipeline\EEGapp\for_testing\splash.png</file>
+      <file location="${PROJECT_ROOT}\EEGapp\for_testing" name="readme.txt" optional="true">C:\Users\Fabien Dal Maso\Documents\GitHub\EEGapp\EEG Pipeline\EEGapp\for_testing\readme.txt</file>
+      <file location="${PROJECT_ROOT}\EEGapp\for_testing" name="EEGapp.exe" optional="false">C:\Users\Fabien Dal Maso\Documents\GitHub\EEGapp\EEG Pipeline\EEGapp\for_testing\EEGapp.exe</file>
     </build-deliverables>
     <workflow />
     <matlab>
-      <root>C:\Program Files\MATLAB\R2017b</root>
-      <toolboxes />
+      <root>C:\Program Files\MATLAB\R2015a</root>
+      <toolboxes>
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="fixedpoint" />
+        <toolbox name="embeddedcoder" />
+        <toolbox name="matlabcoder" />
+      </toolboxes>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
     </matlab>
     <platform>
       <unix>false</unix>
@@ -636,7 +145,7 @@ Include :
       <vista>false</vista>
       <linux>false</linux>
       <solaris>false</solaris>
-      <osver>6.3</osver>
+      <osver>6.2</osver>
       <os32>false</os32>
       <os64>true</os64>
       <arch>win64</arch>
