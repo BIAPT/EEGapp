@@ -169,11 +169,6 @@ else
             nbchannels = EEG.nbchan;
             samplingRate = EEG.srate;
         else
-            if nbchannels ~= EEG.nbchan 
-                textLabel = sprintf('The EEG data you loaded do not have the same number of channels, you will not be able to input a custom ordering of the channels.');
-                set(findobj('Tag','feedback'), 'String', textLabel); 
-                sameChan = 0; 
-            end
             if samplingRate ~= EEG.srate 
                 textLabel = sprintf('The EEG data you loaded do not have the same sampling rate. Please analyse the EEG data one at a time.');
                 set(findobj('Tag','feedback'), 'String', textLabel); 
