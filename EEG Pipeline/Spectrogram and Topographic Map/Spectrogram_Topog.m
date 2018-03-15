@@ -22,7 +22,7 @@ function varargout = Spectrogram_Topog(varargin)
 
 % Edit the above text to modify the response to help Spectrogram_Topog
 
-% Last Modified by GUIDE v2.5 04-Feb-2017 15:43:19
+% Last Modified by GUIDE v2.5 15-Mar-2018 12:57:28
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -551,3 +551,10 @@ function help_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 open('Documentation.pdf') %This will need to change when the documentation will be done.
+
+
+% --------------------------------------------------------------------
+function customize_Callback(hObject, eventdata, handles)
+% hObject    handle to customize (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)

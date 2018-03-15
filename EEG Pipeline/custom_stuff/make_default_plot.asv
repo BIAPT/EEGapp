@@ -1,0 +1,13 @@
+function make_default_plot( EEG )
+%MAKE_DEFAULT_PLOT Summary of this function goes here
+%   Detailed explanation goes here
+
+%% Make the default plot for spectrogram
+
+
+%% Make the default plot for phase amplitude coupling
+
+%% Make the 
+
+end
+

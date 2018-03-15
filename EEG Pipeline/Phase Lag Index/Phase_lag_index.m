@@ -22,7 +22,7 @@ function varargout = Phase_lag_index(varargin)
 
 % Edit the above text to modify the response to help Phase_lag_index
 
-% Last Modified by GUIDE v2.5 24-May-2017 12:18:57
+% Last Modified by GUIDE v2.5 15-Mar-2018 14:16:21
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -384,3 +384,16 @@ set(findobj('Tag','pli_thetaband'),'FontSize',font_size)
 set(findobj('Tag','pli_gammaband'),'FontSize',font_size)
 set(findobj('Tag','Output'),'FontSize',font_size)
 set(findobj('Tag','continue_tag'),'FontSize',font_size)
+
+
+% --------------------------------------------------------------------
+function customize_plot_Callback(hObject, eventdata, handles)
+% hObject    handle to customize_plot (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+InterfaceObj=findobj(gcf,'Enable','on');
+set(InterfaceObj,'Enable','off');%disabling the current window
+run('customize_plot.m'); %running the program (Reorder)
+uiwait(gcf); %wait for it to be done
+
+set(InterfaceObj,'Enable','on');%re-enabling the window

@@ -22,7 +22,7 @@ function varargout = Directed_Phase_Lag_Index(varargin)
 
 % Edit the above text to modify the response to help Directed_Phase_Lag_Index
 
-% Last Modified by GUIDE v2.5 20-Mar-2017 15:48:32
+% Last Modified by GUIDE v2.5 15-Mar-2018 15:25:28
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -388,3 +388,16 @@ function help_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 open('Documentation.pdf') % This will need to change when the documentation will be done
+
+
+% --------------------------------------------------------------------
+function customize_plot_Callback(hObject, eventdata, handles)
+% hObject    handle to customize_plot (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+InterfaceObj=findobj(gcf,'Enable','on');
+set(InterfaceObj,'Enable','off');%disabling the current window
+run('customize_plot.m'); %running the program (Reorder)
+uiwait(gcf); %wait for it to be done
+
+set(InterfaceObj,'Enable','on');%re-enabling the window

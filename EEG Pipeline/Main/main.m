@@ -557,6 +557,7 @@ function figure1_CloseRequestFcn(hObject, eventdata, handles)
 % Hint: delete(hObject) closes the figure
 set(0,'DefaultFigureVisible','on');
 settings = evalin('base','settings');
+settings.options.custom_plot_pli = 0;
 options = settings.options;
 save([fileparts(which(mfilename)) '/settings.mat'],'options');
 evalin('base','clear');
@@ -659,6 +660,7 @@ function figure1_DeleteFcn(hObject, eventdata, handles)
 % hObject    handle to figure1 (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
+
 
 
 % --- Executes on button press in phase_amplitude.

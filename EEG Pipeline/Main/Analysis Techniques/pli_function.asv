@@ -157,13 +157,7 @@ try
         imagesc(z_score);
         title(sprintf('PLI of %s at Bandpass: %s',EEG.filename,current_pli));
         settings = evalin('base','settings');
-        if(settings.options.custom_plot_pli == 1)
-           [custom_x_labels,custom_y_labels,custom_x_ticks,custom_y_ticks] = load_plot_data('custom_plot_pli.fig');
-            set(gca,'YTicklabel',custom_y_labels)
-            set(gca,'XTickLabel',custom_x_labels)%[0:step:max_time])
-            set(gca,'YTick',custom_y_ticks)
-            set(gca,'XTick',custom_x_ticks)%[0:step:max_time])            
-        end
+settings.options.custom_plot_pli = 1;
         colorbar;
         
         %Here we save the dPLI at the right place        
@@ -219,14 +213,6 @@ try
             colormap('jet')
             imagesc(z_score,'hittest','off');
             title(sprintf('PLI of %s at Bandpass: %s',EEG.filename,current_pli));
-            settings = evalin('base','settings');
-            if(settings.options.custom_plot_pli == 1)
-               [custom_x_labels,custom_y_labels,custom_x_ticks,custom_y_ticks] = load_plot_data('custom_plot_pli.fig');
-                set(gca,'YTicklabel',custom_y_labels)
-                set(gca,'XTickLabel',custom_x_labels)%[0:step:max_time])
-                set(gca,'YTick',custom_y_ticks)
-                set(gca,'XTick',custom_x_ticks)%[0:step:max_time])
-            end            
             colorbar;
 
             S.ax = gca;
