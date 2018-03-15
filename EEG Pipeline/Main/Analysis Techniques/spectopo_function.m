@@ -42,6 +42,7 @@ try
     title(strcat(EEG.filename,' Spectrogram(Average of all electrodes)'));
     ylabel('Frequency','fontsize',12);
     xlabel('Time','fontsize',12);
+    colormap(jet);
     movegui(spect_plot,'west');
     
     %Save it to right directory

@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="4166778148" file="C:\Users\Fabien Dal Maso\Documents\GitHub\EEGapp\EEG Pipeline\EEGapp.prj" location="C:\Users\Fabien Dal Maso\Documents\GitHub\EEGapp\EEG Pipeline" name="EEGapp" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="1626145328" file="C:\Users\Fabien Dal Maso\Documents\GitHub\EEGapp\EEG Pipeline\EEGapp.prj" location="C:\Users\Fabien Dal Maso\Documents\GitHub\EEGapp\EEG Pipeline" name="EEGapp" target="target.mlapps" target-name="Package App">
     <param.appname>EEGapp</param.appname>
     <param.authnamewatermark>Yacine Mahdid and Dr. Blain Moraes</param.authnamewatermark>
     <param.email>Yacine.mahdid@mail.mcgill.ca</param.email>
