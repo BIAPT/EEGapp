@@ -60,6 +60,36 @@ settings = evalin('base','settings');
 settings.options.custom_plot_pli = 0;
 assignin('base','settings',settings);
 EEG = evalin('base','EEG');
+subset = evalin('base','subset');
+    if(strcmp(subset,'custom') == 1)
+        EEGOrderString =  evalin('base','channelSubset');
+        EEGOrderString = strsplit(EEGOrderString);
+        display('EEGorder string')
+        display(EEGOrderString);
+        labels = {EEG.chanlocs.labels}.';
+        index = 1;
+
+        for i=1:length(EEGOrderString)
+           location = 0;
+           for j=1:EEG.nbchan
+               EEGOrderString{i}
+               labels{j}
+               if(strcmp(EEGOrderString{i},labels{j}) == 1)
+                   location  = j;
+                   break;
+               end
+           end
+           if(location ~= 0)
+            new_data(index,:) = EEG.data(location,:);
+            new_chanlocs(index,:) = EEG.chanlocs(:,location);
+            index = index + 1;
+           end
+        end
+        EEG.data = new_data;
+        EEG.chanlocs = new_chanlocs;
+        EEG.nbchan = index - 1;
+        clearvars new_data new_chanlocs
+    end
 h = make_default_plot(EEG);
 assignin('base','figure_handle',h);
 movegui(gcf,'center')

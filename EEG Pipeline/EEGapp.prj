@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="1626145328" file="C:\Users\Fabien Dal Maso\Documents\GitHub\EEGapp\EEG Pipeline\EEGapp.prj" location="C:\Users\Fabien Dal Maso\Documents\GitHub\EEGapp\EEG Pipeline" name="EEGapp" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="2465110082" file="C:\Users\Fabien Dal Maso\Documents\GitHub\EEGapp\EEG Pipeline\EEGapp.prj" location="C:\Users\Fabien Dal Maso\Documents\GitHub\EEGapp\EEG Pipeline" name="EEGapp" target="target.mlapps" target-name="Package App">
     <param.appname>EEGapp</param.appname>
     <param.authnamewatermark>Yacine Mahdid and Dr. Blain Moraes</param.authnamewatermark>
     <param.email>Yacine.mahdid@mail.mcgill.ca</param.email>
@@ -11,7 +11,7 @@
       <file>${PROJECT_ROOT}\EEGapp_resources\icon_16.png</file>
     </param.icons>
     <param.summary>Official Release:
-Now allows to select a subset of channels</param.summary>
+Now allows to customize x and y labels of PLI and dPLI before running the analysis</param.summary>
     <param.description>Pipeline for analysis of continuous EEG data.
 Include : 
 &lt;ul&gt;
@@ -24,7 +24,7 @@ Include :
 &lt;li&gt;Graph Theory&lt;/li&gt;
 &lt;/ul&gt;</param.description>
     <param.screenshot />
-    <param.version>1.3.4</param.version>
+    <param.version>1.3.5</param.version>
     <param.products.name>
       <item>Bioinformatics Toolbox</item>
       <item>Control System Toolbox</item>
@@ -38,8 +38,6 @@ Include :
       <item>Simulink Real-Time</item>
       <item>Statistics and Machine Learning Toolbox</item>
       <item>Symbolic Math Toolbox</item>
-      <item>Parallel Computing Toolbox</item>
-      <item>MATLAB Distributed Computing Server</item>
     </param.products.name>
     <param.products.id>
       <item>'83'</item>
@@ -54,8 +52,6 @@ Include :
       <item>'56'</item>
       <item>'19'</item>
       <item>'15'</item>
-      <item>'80'</item>
-      <item>'94'</item>
     </param.products.id>
     <param.products.version>
       <item>4.5.1</item>
@@ -70,15 +66,17 @@ Include :
       <item>6.2</item>
       <item>10.0</item>
       <item>6.2</item>
-      <item>6.6</item>
-      <item>6.6</item>
     </param.products.version>
-    <param.platforms />
+    <param.platforms>
+      <item>glnxa64</item>
+      <item>win64</item>
+      <item>win32</item>
+      <item>maci64</item>
+    </param.platforms>
     <param.output>C:\Users\Fabien Dal Maso\Documents\GitHub\EEGapp\EEGapp.mlappinstall</param.output>
-    <param.guid>f3546676-ccd6-45ff-a0b7-9121c435d528</param.guid>
+    <param.guid>3e4f41ed-3931-4a44-b94a-b91e1b144619</param.guid>
     <unset>
       <param.screenshot />
-      <param.platforms />
     </unset>
     <fileset.main>
       <file>${PROJECT_ROOT}\Main\main.m</file>
@@ -86,6 +84,9 @@ Include :
     <fileset.depfun>
       <file>${PROJECT_ROOT}\Coherence\coherence.fig</file>
       <file>${PROJECT_ROOT}\Coherence\coherence.m</file>
+      <file>${PROJECT_ROOT}\Custom Plots\custom_plot_pli.fig</file>
+      <file>${PROJECT_ROOT}\Custom Plots\customize_plot.fig</file>
+      <file>${PROJECT_ROOT}\Custom Plots\customize_plot.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\add_order.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\average_network_properties.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\averagetopo.m</file>
@@ -1129,6 +1130,8 @@ Include :
       <file>${PROJECT_ROOT}\custom_stuff\graph_MDFsource_coherence.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\graphProperties.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\license.txt</file>
+      <file>${PROJECT_ROOT}\custom_stuff\load_plot_data.m</file>
+      <file>${PROJECT_ROOT}\custom_stuff\make_default_plot.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\mni2orFROMxyz.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\modularity_dir.m</file>
       <file>${PROJECT_ROOT}\custom_stuff\modularity_finetune_dir.m</file>
@@ -1233,6 +1236,7 @@ Include :
     </fileset.depfun>
     <fileset.resources>
       <file>${PROJECT_ROOT}\Coherence</file>
+      <file>${PROJECT_ROOT}\Custom Plots</file>
       <file>${PROJECT_ROOT}\custom_stuff</file>
       <file>${PROJECT_ROOT}\Directed Phase Lag Index</file>
       <file>${PROJECT_ROOT}\Documentation</file>
