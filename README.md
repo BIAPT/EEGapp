@@ -1,4 +1,4 @@
-<img src="https://github.com/BIAPT/EEGapp/blob/master/EEG%20Pipeline/Documentation/LOGO_BG.jpg?"/>
+<img src="https://github.com/BIAPT/EEGapp/blob/master/EEGapp/Documentation/LOGO_BG.jpg?"/>
 <h1>What is EEGapp?</h1>
 <p>EEGapp is a pipeline in the form of a GUI that automatizes the analysis of EEG data using new techniques that are not yet offered in other processing pipelines. Analysis techniques like <b>Phase Lag Index</b>, <b>directed Phase Lag Index</b>, <b>Phase Amplitude Coupling</b> or <b>Symbolic Transfer Entropy</b> are all bundled into MATLAB functions along with all the necessary surrogate data analysis already implemented.</p>
 <h1>Features</h1>
