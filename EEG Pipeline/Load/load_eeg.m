@@ -1,9 +1,0 @@
-function returnEEG = load_eeg(filename)
-    load(filename);
-    global newEEG;
-    newEEG = struct('setname',EEG.setname,'filename',EEG.filename,'filepath',...
-    EEG.filepath,'nbchan',EEG.nbchan,'pnts',EEG.pnts,'srate',EEG.srate,'xmin',...
-    EEG.xmin,'xmax',EEG.xmax,'data',EEG.data,'chanlocs',EEG.chanlocs,'urchanlocs',...
-    EEG.urchanlocs,'trials',EEG.trials,'event',EEG.event,'chaninfo',EEG.chaninfo);
-    returnEEG = newEEG;
-end
