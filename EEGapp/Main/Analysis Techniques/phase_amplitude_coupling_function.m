@@ -79,6 +79,7 @@ try
     
     %Repeat the calculation below for each segment
     for segment=1:segment_num
+        sortamp = zeros([numberOfBin, 2]);
         for n = 1:length(channels_pac)    % Find average over all channels
 
             ch_phase = phase(n,:);
@@ -86,7 +87,6 @@ try
     
             %   Sort amplitudes according to phase.  Sortamp adds the amplitude in
             %   (:,1) and keeps track of the total numbers added in (:,2)
-            sortamp = zeros([numberOfBin, 2]);
             for i = (((segment-1)*segment_pnts)+1):((segment*segment_pnts)+1)
                 for j = 1:numberOfBin 
                     if ch_phase(i) > (-pi+(j-1)*binsize) && ch_phase(i) < (-pi+(j*binsize))
