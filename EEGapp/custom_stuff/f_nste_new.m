@@ -80,20 +80,25 @@ T_s(2) = (T(2) - sft_T)/H_XY;
 % replaced by the one below (as suggested by Dr. Chang)
 display('new version running!')
 
+function ent = cond_ent(dim, future, past)
+% Easier to trace/debug, but (by far) less efficient.
 
+% Marginal entropy H(X_P)
+symbols = unique(past);
+H_x = 0;
+for n = 1:numel(symbols)
+    prob = mean(past == symbols(n));
+    H_x = H_x - prob * log2(prob);
+end
 
+% Joint entropy H(X_F, X_P)
+joint = future * 10^dim + past;
+symbols = unique(joint);
+H_xx = 0;
+for n = 1:numel(symbols)
+    prob = mean(joint == symbols(n));
+    H_xx = H_xx - prob * log2(prob);
+end
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+% Conditional entropy
+ent = H_xx - H_x;
