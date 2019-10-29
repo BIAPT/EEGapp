@@ -37,7 +37,20 @@ Int_past=INT(1:end-delta,:);
 [P1, P2, P3, P4] = f_Integer2prob(Int_future(:,1), Int_past(:,1), Int_past(:,2));
 sft_T = sum( P1 .* (log2( P1.*P4 ) - log2(P2.*P3)) );
 %H_XY =  sum ( P1.*(log2(P2) - log2(P1.*P2))); *** SEE BOTTOM OF CODE
-H_XY = -sum ( P3./P4.*(log2(P3) - log2(P4))) 
+%H_XY = -sum ( P3./P4.*(log2(P3) - log2(P4))) 
+
+% Bugfix by Sebastian Berger:
+% NOTE THAT P1, P2, P3, and P4 ARE *NOT* PROBABILITY DISTRIBUTIONS.
+% Due to the implementation trick pulled in f_Integer2prob, P1 here
+% needs to be used to weight the sum of logarithms. The code will then
+% correctly calculate H(Y_F | Y_P), that is, the conditional entropy
+% of the future of the sink channel (Y_F), given its own past(Y_P).
+
+H_XY = -sum ( P1.*(log2(P3) - log2(P4)));
+
+% For testing:
+% fprintf('Delta: %g\n', H_XY - cond_ent(dim, Int_future(:, 1), Int_past(:, 1)));
+
 T_s(1) = (T(1) - sft_T)/H_XY;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -58,7 +71,8 @@ Int_past=INT(1:end-delta,:);
 [P1, P2, P3, P4] = f_Integer2prob(Int_future(:,2), Int_past(:,2), Int_past(:,1));
 sft_T = sum( P1 .* (log2( P1.*P4 ) - log2(P2.*P3)) );
 %H_XY =  sum ( P1.*(log2(P2) - log2(P1.*P2))); *** SEE BOTTOM OF CODE
-H_XY = -sum ( P3./P4.*(log2(P3) - log2(P4))) 
+%H_XY = -sum ( P3./P4.*(log2(P3) - log2(P4))) 
+H_XY = -sum ( P1.*(log2(P3) - log2(P4)));
 T_s(2) = (T(2) - sft_T)/H_XY;
 
 %*** NSTE didn't give the right output with this line of code
@@ -66,20 +80,25 @@ T_s(2) = (T(2) - sft_T)/H_XY;
 % replaced by the one below (as suggested by Dr. Chang)
 display('new version running!')
 
+function ent = cond_ent(dim, future, past)
+% Easier to trace/debug, but (by far) less efficient.
 
+% Marginal entropy H(X_P)
+symbols = unique(past);
+H_x = 0;
+for n = 1:numel(symbols)
+    prob = mean(past == symbols(n));
+    H_x = H_x - prob * log2(prob);
+end
 
+% Joint entropy H(X_F, X_P)
+joint = future * 10^dim + past;
+symbols = unique(joint);
+H_xx = 0;
+for n = 1:numel(symbols)
+    prob = mean(joint == symbols(n));
+    H_xx = H_xx - prob * log2(prob);
+end
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+% Conditional entropy
+ent = H_xx - H_x;
